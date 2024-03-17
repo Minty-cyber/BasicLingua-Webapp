@@ -5,16 +5,16 @@ class TranslationForm(forms.Form):
     user_input = forms.CharField(label='User Input')
     target_lang = forms.CharField(label='Target Language')
     
-# class TextReplacementForm(forms.Form):
-#     api_key = forms.CharField(label='API Key')
-#     user_input = forms.CharField(label='User Input')
-#     replacement_rules = forms.CharField(label='Replacement Rules')
+class TextReplacementForm(forms.Form):
+    api_key = forms.CharField(label='API Key')
+    user_input = forms.CharField(label='User Input')
+    replacement_rules = forms.CharField(label='Replacement Rules')
 
-# class TextCorrectionForm(forms.Form):
-#     api_key = forms.CharField(label='API Key')
-#     user_input = forms.CharField(label='User Input')
+class TextCorrectionForm(forms.Form):
+    api_key = forms.CharField(label='API Key')
+    user_input = forms.CharField(label='User Input')
     
-# class ExtractPatternForm(forms.Form):
-#     api_key = forms.CharField(label='API Key')
-#     user_input = forms.CharField(label='User Input')
-#     patterns = forms.CharField(label='Patterns')
+class ExtractPatternForm(forms.Form):
+    api_key = forms.CharField(label='API Key')
+    user_input = forms.CharField(label='User Input')
+    patterns = forms.CharField(label='Patterns')
