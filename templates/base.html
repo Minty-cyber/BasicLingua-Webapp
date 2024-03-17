@@ -1,0 +1,86 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+
+    
+
+<div class="hamburger" id="hamburger">&#9776;</div>
+
+
+
+<div class="sidebar" id="sidebar">
+    <a href="{% url 'text-translation' %}">Text&nbsp;Translation</a>
+   
+</div>
+
+<nav class="navbar">
+    <div class="container">
+        <a class="navbar-brand mx-auto" style="margin-top: 12px; font-size: 40px;" href="{% url 'base' %}">BasicLingua</a>
+    </div>
+</nav>
+
+
+{% block intro %}
+<div class="intro-container">
+    <p>
+        This is a demo of how the BasicLingua works
+    </p>
+</div>
+{% endblock intro %}
+
+
+<div style="margin-top: 30px;" class="container">
+    {% block content %}
+
+    {% endblock content %}
+</div>
+
+
+
+<!-- <h2 class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-adjust"></i></h2> -->
+
+<script>
+    // const theme = localStorage.getItem("theme") || "light";
+    // document.body.classList.add(theme + "-theme");
+
+    const sidebar = document.getElementById('sidebar');
+    const hamburger = document.getElementById('hamburger');
+    const themeToggle = document.querySelector('.theme-toggle');
+
+    hamburger.addEventListener('mouseenter', openNav);
+    sidebar.addEventListener('mouseleave', closeNav);
+
+    function openNav() {
+        sidebar.style.width = '200px';
+        hamburger.style.display = 'none';
+    }
+
+    function closeNav() {
+        sidebar.style.width = '0';
+        hamburger.style.display = 'block';
+    }
+
+    // function toggleTheme() {
+    //     const currentTheme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+    //     const newTheme = currentTheme === "dark" ? "light" : "dark";
+        
+    //     // Toggle theme class
+    //     localStorage.setItem("theme", newTheme);
+    //     document.body.classList.remove(currentTheme + "-theme");
+    //     document.body.classList.add(newTheme + "-theme");
+    // }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+{% extends 'base_lang.html' %}
+{% block intro %}
+   
+{% endblock intro %}
+
+{% block docs %}
+    <h5>Read more on Text Translation <span><a href="#">here</a></span></h5>
+{% endblock docs %} 
+
+{% block form_content %}        
+    <div class="col-md-6">
+        <div class="yellow">
+                <h1 style="font-size: 25px;">Translate Text</h1>
+                <form class="form-design" id="translation-form" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="api_key" style="color: white;" name="api_key" placeholder="Enter Gemini API Key" value="{{ form.api_key.value }}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="user_input" name="user_input" style="color: white;" placeholder="Enter Text to Translate" value="{{ form.user_input.value }}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="target_lang" name="target_lang" style="color: white;" placeholder="Enter Target Language" value="{{ form.target_lang.value }}">
+                    </div>
+                    <button id="translate-button" type="button" class="btn btn-primary">Translate</button>
+                    <button id="refresh-button" type="button" class="btn btn-secondary">Refresh</button> 
+                </form>
+                
+                <div id="loader" class="loader"></div>
+                
+                
+                <div id="translation-result" style="margin-top: 20px;">
+                    {% if translated_text %}
+                    <h1 style="font-size: 25px;">Translation Result</h1>
+                    <p style="text-align: left;">{{ translated_text }}</p>
+                    {% endif %}
+                </div>
+            
+                
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>var translationUrl = "{% url 'text-translation' %}";</script>
+    
+    
+    <script>
+        window.onload = function() {
+            localStorage.clear();
+        };
+    
+        document.getElementById("api_key").value = "";
+        document.getElementById("user_input").value = "";
+        document.getElementById("target_lang").value = "";
+    
+        document.getElementById("translate-button").addEventListener("click", function() {
+            var apiKey = document.getElementById("api_key").value.trim();
+            var userInput = document.getElementById("user_input").value.trim();
+            var targetLang = document.getElementById("target_lang").value.trim();
+    
+            if (apiKey === "" || userInput === "" || targetLang === "") {
+                alert("Please fill in all required fields.");
+                return;
+            }
+    
+            document.getElementById("loader").style.display = "block";
+    
+            localStorage.setItem("api_key", apiKey);
+            localStorage.setItem("user_input", userInput);
+            localStorage.setItem("target_lang", targetLang);
+    
+            $.ajax({
+                url: translationUrl,
+                type: "POST",
+                data: $("#translation-form").serialize(),
+                success: function(response) {
+                    document.getElementById("loader").style.display = "none";
+                    console.log("Response:", response);
+                    document.getElementById("translation-result").innerHTML = "<h4>Translation Result</h4><p style='text-align: left;'>" + response.translated_text + "</p>";
+                },
+                error: function(xhr, errmsg, err) {
+                    document.getElementById("loader").style.display = "none";
+                    document.getElementById("translation-result").innerHTML = "<h4>Error retrieving output</h4><p style='text-align: left;'>" + xhr.status + "</p>"
+                    console.log("Error:", xhr.status + ": " + xhr.responseText);
+                }
+            });
+        });
+
+        document.getElementById("refresh-button").addEventListener("click", function() {
+        document.getElementById("api_key").value = "";
+        document.getElementById("user_input").value = "";
+        document.getElementById("target_lang").value = "";
+        document.getElementById("translation-result").innerHTML = "";
+    });
+    </script>
+{% endblock form_content %}
+
+    
