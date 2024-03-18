@@ -4,7 +4,7 @@
 {% endblock intro %}
 
 {% block docs %}
-    <h5>Read more on Text Correction <span><a href="#">here</a></span></h5>
+    <h5>Navigate to Text Correction <span><a style="text-decoration: none;" href="https://basiclingua-docs.streamlit.app/">here </a><span>to know more</span></span></h5>
 {% endblock docs %} 
 
 {% block form_content %}
@@ -49,7 +49,12 @@
 
 <script>
     window.onload = function() {
-        localStorage.clear();
+        localStorage.removeItem("user_input");
+
+        var savedApiKey = localStorage.getItem("api_key");
+        if (savedApiKey) {
+            document.getElementById("api_key").value = savedApiKey;
+        }
     };
 
     document.getElementById("api_key").value = "";
@@ -90,7 +95,6 @@
 
 
         document.getElementById("refresh-button").addEventListener("click", function() {
-        document.getElementById("api_key").value = "";
         document.getElementById("user_input").value = "";
         document.getElementById("corrected-result").innerHTML = "";
     });

@@ -4,7 +4,7 @@
 {% endblock intro %}
 
 {% block docs %}
-    <h5>Read more on Extract Patterns <span><a href="#">here</a></span></h5>
+    <h5>Navigate to Extract Patterns <span><a style="text-decoration: none;" href="https://basiclingua-docs.streamlit.app/">here </a><span>to know more</span></span></h5>
 {% endblock docs %} 
 
 {% block form_content %}        
@@ -50,7 +50,15 @@
     
     <script>
         window.onload = function() {
-            localStorage.clear();
+            localStorage.removeItem("user_input");
+            localStorage.removeItem("patterns");
+
+
+            var savedApiKey = localStorage.getItem("api_key");
+            if (savedApiKey) {
+            document.getElementById("api_key").value = savedApiKey;
+        }
+
         };
     
         document.getElementById("api_key").value = "";
@@ -91,7 +99,6 @@
         });
 
         document.getElementById("refresh-button").addEventListener("click", function() {
-        document.getElementById("api_key").value = "";
         document.getElementById("user_input").value = "";
         document.getElementById("patterns").value = "";
         document.getElementById("extraction-result").innerHTML = "";
