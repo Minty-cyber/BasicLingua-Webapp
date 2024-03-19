@@ -1,16 +1,12 @@
 window.onload = function() {
     localStorage.removeItem("user_input");
-    localStorage.removeItem("replacement_rules");
+    
 
-    var savedApiKey = localStorage.getItem("api_key");
-    if (savedApiKey) {
-        document.getElementById("api_key").value = savedApiKey;
-    }
+    
+    document.getElementById("api_key").value = "";
+    document.getElementById("user_input").value = "";
+    document.getElementById("replacement_rules").value = "";
 };
-
-document.getElementById("api_key").value = "";
-document.getElementById("user_input").value = "";
-document.getElementById("replacement_rules").value = "";
 
 document.getElementById("process-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();

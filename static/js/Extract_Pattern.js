@@ -1,13 +1,11 @@
 window.onload = function() {
     localStorage.removeItem("user_input");
-    localStorage.removeItem("patterns");
+    
 
-
-    var savedApiKey = localStorage.getItem("api_key");
-    if (savedApiKey) {
-    document.getElementById("api_key").value = savedApiKey;
-}
-
+    
+    document.getElementById("api_key").value = "";
+    document.getElementById("user_input").value = "";
+    document.getElementById("patterns").value = "";
 };
 
 document.getElementById("api_key").value = "";
