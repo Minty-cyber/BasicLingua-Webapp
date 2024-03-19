@@ -2,16 +2,13 @@ window.onload = function() {
     localStorage.removeItem("user_input");
     localStorage.removeItem("target_lang");
 
+    // Clear API key input field
+    document.getElementById("api_key").value = "";
 
-    var savedApiKey = localStorage.getItem("api_key");
-    if (savedApiKey) {
-    document.getElementById("api_key").value = savedApiKey;
-}
+    // Clear other input fields
+    document.getElementById("user_input").value = "";
+    document.getElementById("target_lang").value = "";
 };
-
-document.getElementById("api_key").value = "";
-document.getElementById("user_input").value = "";
-document.getElementById("target_lang").value = "";
 
 document.getElementById("translate-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();
@@ -47,7 +44,7 @@ document.getElementById("translate-button").addEventListener("click", function()
 });
 
 document.getElementById("refresh-button").addEventListener("click", function() {
-document.getElementById("user_input").value = "";
-document.getElementById("target_lang").value = "";
-document.getElementById("translation-result").innerHTML = "";
+    document.getElementById("user_input").value = "";
+    document.getElementById("target_lang").value = "";
+    document.getElementById("translation-result").innerHTML = "";
 });
