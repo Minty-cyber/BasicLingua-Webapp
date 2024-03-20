@@ -1,11 +1,12 @@
 window.onload = function() {
-    localStorage.removeItem("user_input");
-    
+    var cachedApiKey = localStorage.getItem("api_key");
+    var cachedUserInput = localStorage.getItem("user_input");
+    var cachedTargetLang = localStorage.getItem("replacement_rules");
 
     
-    document.getElementById("api_key").value = "";
-    document.getElementById("user_input").value = "";
-    document.getElementById("replacement_rules").value = "";
+    document.getElementById("api_key").value = cachedApiKey || "";
+    document.getElementById("user_input").value = cachedUserInput && "";
+    document.getElementById("replacement_rules").value = cachedTargetLang && "";
 };
 
 document.getElementById("process-button").addEventListener("click", function() {
@@ -42,7 +43,11 @@ document.getElementById("process-button").addEventListener("click", function() {
 });
 
     document.getElementById("refresh-button").addEventListener("click", function() {
-    document.getElementById("user_input").value = "";
-    document.getElementById("replacement_rules").value = "";
-    document.getElementById("processed-result").innerHTML = "";
-});
+        document.getElementById("user_input").value = "";
+        document.getElementById("replacement_rules").value = "";
+        document.getElementById("processed-result").innerHTML = "";
+
+        
+        localStorage.removeItem("user_input");
+        localStorage.removeItem("target_lang");
+    });

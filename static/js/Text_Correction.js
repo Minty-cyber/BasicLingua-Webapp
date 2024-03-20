@@ -1,10 +1,12 @@
 window.onload = function() {
-    localStorage.removeItem("user_input");
+    var cachedApiKey = localStorage.getItem("api_key");
+    var cachedUserInput = localStorage.getItem("user_input");
     
 
     
-    document.getElementById("api_key").value = "";
-    document.getElementById("user_input").value = "";
+    document.getElementById("api_key").value = cachedApiKey || "";
+    document.getElementById("user_input").value = cachedUserInput && "";
+    
     
 };
 
@@ -42,6 +44,10 @@ window.onload = function() {
 
 
         document.getElementById("refresh-button").addEventListener("click", function() {
-        document.getElementById("user_input").value = "";
-        document.getElementById("corrected-result").innerHTML = "";
+            document.getElementById("user_input").value = "";
+            document.getElementById("corrected-result").innerHTML = "";
+
+            
+        localStorage.removeItem("user_input");
+        localStorage.removeItem("target_lang");
     });

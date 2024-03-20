@@ -43,9 +43,13 @@ window.onload = function() {
         });
     });
 
-        document.getElementById("refresh-button").addEventListener("click", function() {
+    document.getElementById("refresh-button").addEventListener("click", function() {
         document.getElementById("user_input").value = "";
         document.getElementById("target_lang").value = "";
         document.getElementById("translation-result").innerHTML = "";
+    
+        
+        localStorage.removeItem("user_input");
+        localStorage.removeItem("target_lang");
     });
 };

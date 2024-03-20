@@ -1,16 +1,15 @@
 window.onload = function() {
-    localStorage.removeItem("user_input");
+    var cachedApiKey = localStorage.getItem("api_key");
+    var cachedUserInput = localStorage.getItem("user_input");
+    var cachedTargetLang = localStorage.getItem("patterns");
     
 
-    
-    document.getElementById("api_key").value = "";
-    document.getElementById("user_input").value = "";
-    document.getElementById("patterns").value = "";
+    document.getElementById("api_key").value = cachedApiKey || "";
+    document.getElementById("user_input").value = cachedUserInput && "";
+    document.getElementById("patterns").value = cachedTargetLang && "";
 };
 
-document.getElementById("api_key").value = "";
-document.getElementById("user_input").value = "";
-document.getElementById("patterns").value = "";
+
 
 document.getElementById("extract-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();
@@ -46,7 +45,11 @@ document.getElementById("extract-button").addEventListener("click", function() {
 });
 
 document.getElementById("refresh-button").addEventListener("click", function() {
-document.getElementById("user_input").value = "";
-document.getElementById("patterns").value = "";
-document.getElementById("extraction-result").innerHTML = "";
+    document.getElementById("user_input").value = "";
+    document.getElementById("patterns").value = "";
+    document.getElementById("extraction-result").innerHTML = "";
+
+    
+    localStorage.removeItem("user_input");
+    localStorage.removeItem("target_lang");
 });
