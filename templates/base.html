@@ -83,10 +83,10 @@
             event.preventDefault();
             
             var apiKey = document.getElementById("api_key_input").value;
-            localStorage.setItem("api_key", apiKey); // Save API key to localStorage
+            localStorage.setItem("api_key", apiKey); 
             
-            document.getElementById("message").innerHTML = "API key saved!"; // Show message
-            document.getElementById("message").style.display = "block"; // Show message container
+            document.getElementById("message").innerHTML = "API key saved!"; 
+            document.getElementById("message").style.display = "block"; 
 
             setTimeout(function() {
                 document.getElementById("message").style.opacity = "0";
