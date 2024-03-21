@@ -50,6 +50,8 @@
                             <input type="text" class="form-control" id="api_key_input" placeholder="Enter Your API Key" value="{{ api_key }}">
                         </div>
                         <button type="submit" class="btn btn-primary">Save API Key</button>
+                        <button id="clear-cache-button" class="btn btn-secondary">Clear API key from cache</button>
+
                     </form>
                     <div id="message" style="display: none;"></div> 
                 </div>
@@ -59,44 +61,87 @@
     
     {% endblock api_form %}
 
-    <script src="{% static 'js/base.js' %}"></script>
     <script>
-        const sidebar = document.getElementById('sidebar');
-        const hamburger = document.getElementById('hamburger');
 
-        hamburger.addEventListener('mouseenter', openNav);
-        sidebar.addEventListener('mouseleave', closeNav);
+            const sidebar = document.getElementById('sidebar');
+            const hamburger = document.getElementById('hamburger');
 
-        function openNav() {
-            sidebar.style.width = '200px';
-            hamburger.style.display = 'none';
-        }
+            hamburger.addEventListener('mouseenter', openNav);
+            sidebar.addEventListener('mouseleave', closeNav);
 
-        function closeNav() {
-            sidebar.style.width = '0';
-            hamburger.style.display = 'block';
-        }
+            function openNav() {
+                sidebar.style.width = '200px';
+                hamburger.style.display = 'none';
+            }
 
-        document.getElementById("api_key_input").value = localStorage.getItem("api_key") || "";
+            function closeNav() {
+                sidebar.style.width = '0';
+                hamburger.style.display = 'block';
+            }
 
-        document.getElementById("api-key-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            
-            var apiKey = document.getElementById("api_key_input").value;
-            localStorage.setItem("api_key", apiKey); 
-            
-            document.getElementById("message").innerHTML = "API key saved!"; 
-            document.getElementById("message").style.display = "block"; 
+            document.getElementById("api_key_input").value = localStorage.getItem("api_key") || "";
 
-            setTimeout(function() {
-                document.getElementById("message").style.opacity = "0";
+            document.getElementById("api-key-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                
+                var apiKey = document.getElementById("api_key_input").value;
+                localStorage.setItem("api_key", apiKey); 
+                
+                document.getElementById("message").innerHTML = "API key saved!"; 
+                document.getElementById("message").style.display = "block"; 
+
                 setTimeout(function() {
-                    document.getElementById("message").style.display = "none";
-                }, 1000);
-            }, 3000); 
-            
-        
-        });
+                    document.getElementById("message").style.opacity = "0";
+                    setTimeout(function() {
+                        document.getElementById("message").style.display = "none";
+                    }, 1000);
+                }, 3000); 
+                
+
+            });
+
+            document.getElementById("clear-cache-button").addEventListener("click", function(event) {
+                event.preventDefault();
+                localStorage.removeItem("api_key");
+                document.getElementById("api_key_input").value = "";
+                document.getElementById("message").innerHTML = "API key cleared from cache!";
+                document.getElementById("message").style.display = "block"; 
+
+                setTimeout(function() {
+                    document.getElementById("message").style.opacity = "0";
+                    setTimeout(function() {
+                        document.getElementById("message").style.display = "none";
+                    }, 1000);
+                }, 3000);
+            });
+
+                document.querySelector('a[href="{% url "text-translation" %}"]').addEventListener("click", function(event) {
+                if (!document.getElementById("api_key_input").value.trim()) {
+                    event.preventDefault();
+                    alert("Please enter your API key before accessing the Text Translation feature!");
+                }
+            });
+
+            document.querySelector('a[href="{% url "text-replace" %}"]').addEventListener("click", function(event) {
+                if (!document.getElementById("api_key_input").value.trim()) {
+                    event.preventDefault();
+                    alert("Please enter your API key before accessing the Text Replace feature!");
+                }
+            });
+
+            document.querySelector('a[href="{% url "text-correction" %}"]').addEventListener("click", function(event) {
+                if (!document.getElementById("api_key_input").value.trim()) {
+                    event.preventDefault();
+                    alert("Please enter your API key before accessing the Text Correction feature!");
+                }
+            });
+
+            document.querySelector('a[href="{% url "extract-patterns" %}"]').addEventListener("click", function(event) {
+                if (!document.getElementById("api_key_input").value.trim()) {
+                    event.preventDefault();
+                    alert("Please enter your API key before accessing the Extract Patterns feature!");
+                }
+            });
     </script>
 </body>
 </html>
