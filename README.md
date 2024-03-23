@@ -8,29 +8,17 @@ The homepage of the application features an entry field where users can input th
 
 ## Features of the Web App :dart:
 <p align="center">
-  <img src="images/Screenshot (229).png" width="600">
-</p>
-<p align="center">
-  <img src="images/Screenshot (231).png" width="600">
-</p>
-<p align="center">
-  <img src="images/Screenshot (233).png" width="600">
-</p>
-<p align="center">
-  <img src="images/Screenshot (234).png" width="600">
+  <img src="images/Screenshot (229).png" width="400">
+  <img src="images/Screenshot (233).png" width="400">
+  <img src="images/Screenshot (234).png" width="400">
 </p>
 
 The features on the sidebar will be updated constantly prior to the ones [here](https://github.com/FareedKhan-dev/basiclingua-LLM-Based-NLP#features-of-the-library). You can read more on the library and its features [here]()
-# Features :dart:
-
-- **Django Backend**: Robust backend powered by Django and Django Rest Framework.
-- **React Frontend**: An amazing and reponsive User Interfave built with React.js.
 
 # Requirements :anchor:
 
-- React.js
-- Python 3 and above
-- Django (Django Rest Framework)
+- Python 3 and above--BasicLingua library
+- Django
 
 # Getting Started :ferris_wheel:
 
@@ -42,25 +30,8 @@ The features on the sidebar will be updated constantly prior to the ones [here](
    ```
 
 2. **Server Set Up:**
-   Navigate to the frontend directory and run the server
    ```sh
-   cd todofront
-   npm start
-   ```
-## Backend (Django)
-1. **Clone the Repository**
-   ```sh
-   https://github.com/Minty-cyber/React-Django-CRUD-Backend.git
-   ```
-
-2. **Backend Set Up**
-   ```sh
-   cd toDOApi
-   pip install -r requirements.txt
-   ```
-
-3. **Start the Django server**
-   ```sh
+   cd BasicLingua-Webapp
    python manage.py runserver
    ```
    
