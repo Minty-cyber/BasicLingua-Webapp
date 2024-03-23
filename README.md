@@ -7,11 +7,20 @@ BasicLingua-WebApp is a web platform that showcases the features of BasicLingua,
 The homepage of the application features an entry field where users can input the API key required for initializing the BasicLingua library. This key is essential for accessing and utilizing the library's features. Upon accessing the page, users are prompted to obtain an API key from [here](https://aistudio.google.com/app/apikey) for the initialization of the BasicLingua library.
 
 ## Features of the Web App :dart:
-
+<p align="center">
+  <img src="images/Screenshot (229).png" width="600">
+</p>
 <p align="center">
   <img src="images/Screenshot (231).png" width="600">
 </p>
+<p align="center">
+  <img src="images/Screenshot (233).png" width="600">
+</p>
+<p align="center">
+  <img src="images/Screenshot (234).png" width="600">
+</p>
 
+The features on the sidebar will be updated constantly prior to the ones [here](https://github.com/FareedKhan-dev/basiclingua-LLM-Based-NLP#features-of-the-library). You can read more on the library and its features [here]()
 # Features :dart:
 
 - **Django Backend**: Robust backend powered by Django and Django Rest Framework.
