@@ -36,8 +36,11 @@ Download the BasicLingua library with pip
    cd BasicLingua-Webapp
    python manage.py runserver
    ```
+# Acknowledgements 🌟
+
+Special thanks to @[FareedKhan-dev](https://github.com/FareedKhan-dev) for creating this Python library.
    
-### Created by JeffMint🌟
+
 
 
 
