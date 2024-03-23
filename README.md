@@ -3,7 +3,8 @@
 BasicLingua-WebApp is a web platform that showcases the features of BasicLingua, a Gemini LLM-based Python library designed by @[FareedKhan-dev](https://github.com/FareedKhan-dev). This platform demonstrates various linguistic tasks such as Text Translation, Extracting patterns, Text correction, and many other features. Users can interact with the functionalities provided by BasicLingua through an intuitive web interface.
 
 ## How BasicLingua Web App works
-The homepage of the app has an entry of the api key that is required for the initialization of the BasiLingua library. This is needed for the usage of the features of the library. In the process of accessing the page, you must get  an api key from the
+
+The homepage of the application features an entry field where users can input the API key required for initializing the BasicLingua library. This key is essential for accessing and utilizing the library's features. Upon accessing the page, users are prompted to obtain an API key from [here](https://aistudio.google.com/app/apikey), for the initialization of the BasicLingua library.
 
 ## Features of the Web App 🌟
 
