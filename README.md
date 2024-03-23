@@ -22,13 +22,13 @@ The features on the sidebar will be updated constantly prior to the ones [here](
 
 # Getting Started :ferris_wheel:
 
-Download the BasicLingua library with pip
-  ```sh
-    pip install basiclingua
-  ```
 1. **Clone the Repository**
    ```sh
     https://github.com/Minty-cyber/BasicLingua-Webapp
+   ```
+2. **Download the BasicLingua library**
+   ```sh
+    pip install basiclingua
    ```
 
 2. **Server Set Up:**
@@ -39,7 +39,8 @@ Download the BasicLingua library with pip
 
 # Contributing 🤝
 
-We are excited to receive contributions! Please refer to our [CONTRIBUTING.md]() for comprehensive steps on submitting pull requests to the project."
+We are excited to receive contributions! Please refer to our [CONTRIBUTING.md](https://github.com/Minty-cyber/BasicLingua-Webapp/edit/main/CONTRIBUTING.md) for comprehensive steps on submitting pull requests to the project.
+
 
 # Acknowledgements 🌟
 
