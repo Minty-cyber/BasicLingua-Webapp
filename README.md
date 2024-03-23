@@ -22,11 +22,13 @@ The features on the sidebar will be updated constantly prior to the ones [here](
 
 # Getting Started :ferris_wheel:
 
-## Frontend (React.js)🌟
-
+Download the BasicLingua library with pip
+```sh
+    pip install basiclingua
+   ```
 1. **Clone the Repository**
    ```sh
-   https://github.com/Minty-cyber/React-Django-CRUD-Frontend.git
+    https://github.com/Minty-cyber/BasicLingua-Webapp
    ```
 
 2. **Server Set Up:**
@@ -35,7 +37,7 @@ The features on the sidebar will be updated constantly prior to the ones [here](
    python manage.py runserver
    ```
    
-### Created by JeffMint
+### Created by JeffMint🌟
 
 
 
