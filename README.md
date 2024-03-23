@@ -23,9 +23,9 @@ The features on the sidebar will be updated constantly prior to the ones [here](
 # Getting Started :ferris_wheel:
 
 Download the BasicLingua library with pip
-```sh
+  ```sh
     pip install basiclingua
-   ```
+  ```
 1. **Clone the Repository**
    ```sh
     https://github.com/Minty-cyber/BasicLingua-Webapp
@@ -36,6 +36,11 @@ Download the BasicLingua library with pip
    cd BasicLingua-Webapp
    python manage.py runserver
    ```
+
+# Contributing 🤝
+
+We are excited to receive contributions! Please refer to our [CONTRIBUTING.md]() for comprehensive steps on submitting pull requests to the project."
+
 # Acknowledgements 🌟
 
 Special thanks to @[FareedKhan-dev](https://github.com/FareedKhan-dev) for creating this Python library.
