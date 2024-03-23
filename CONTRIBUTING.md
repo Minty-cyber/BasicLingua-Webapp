@@ -15,12 +15,12 @@ To get started with contributing to BasicLingua-Webapp, follow these steps:
    ```bash
    git checkout -b feature/your-feature-name
    
-4.Make your changes and test them locally to see if it is working before any commits
+4.**Make your changes** and test them locally to see if it is working before any commits
 
-5.Commit your changes with clear and descriptive commit messages like:
-   ```bash
-   git commit -m 'Add new feature' 'Add new feature' not 'Added new feture'
+5.**Commit** your changes with clear and descriptive commit messages like:
+   ```sh
+   git commit -m 'Add new feature'
+```
+6. **Push** your changes to the forked repo
 
-6. Push your changes to your forked repo
-
-   
+7. Create a New Pull Request and provide detailed explanation for your changes and submit the pull request
