@@ -6,21 +6,10 @@ BasicLingua-WebApp is a web platform that showcases the features of BasicLingua,
 
 The homepage of the application features an entry field where users can input the API key required for initializing the BasicLingua library. This key is essential for accessing and utilizing the library's features. Upon accessing the page, users are prompted to obtain an API key from [here](https://aistudio.google.com/app/apikey) for the initialization of the BasicLingua library.
 
-## Features of the Web App 🌟
-
-The Hompage of the web app diplays an input field fir the entry of the api key val
-
-- **Tokenization**: Splitting text into individual words or tokens.
-- **Stemming**: Reducing words to their root forms.
-- **Lemmatization**: Converting words to their base or dictionary form.
-- **Other Linguistic Tasks**: Explore additional linguistic functionalities offered by BasicLingua.
-
-# Django Backend Admin Panel:
-
-## By running python manage.py runserver and navigating to /admin
+## Features of the Web App :dart:
 
 <p align="center">
-  <img src="Images/Screenshot (174).png" width="600">
+  <img src="images/Screenshot (231).png" width="600">
 </p>
 
 # Features :dart:
@@ -36,7 +25,7 @@ The Hompage of the web app diplays an input field fir the entry of the api key v
 
 # Getting Started :ferris_wheel:
 
-## Frontend (React.js)
+## Frontend (React.js)🌟
 
 1. **Clone the Repository**
    ```sh
