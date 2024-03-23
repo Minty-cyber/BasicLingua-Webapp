@@ -4,10 +4,12 @@ BasicLingua-WebApp is a web platform that showcases the features of BasicLingua,
 
 
 
-# API View:
-<p align="center">
-  <img src="Images/Screenshot (175).png" width="600">
-</p>
+## Features of the Web App
+
+- **Tokenization**: Splitting text into individual words or tokens.
+- **Stemming**: Reducing words to their root forms.
+- **Lemmatization**: Converting words to their base or dictionary form.
+- **Other Linguistic Tasks**: Explore additional linguistic functionalities offered by BasicLingua.
 
 # Django Backend Admin Panel:
 
