@@ -1,6 +1,6 @@
-# ToDo - React-Django CRUD Application  📝
+# BasicLingua-WebApp 🌐💻
 
-ToDo is an open-sourse project that showcases potent synergy achieved by integrating Django and React in the development of a robust CRUD (Create, Read, Update, Delete) application. This project serves as a guide for developers seeking to harmoniously merge these technology stacks. 
+BasicLingua-WebApp is a web platform that showcases the features of BasicLingua, a Gemini LLM-based Python library. This platform demonstrates various linguistic tasks such as tokenization, stemming, lemmatization, and many other features. Users can interact with the functionalities provided by BasicLingua through an intuitive web interface.
 
 
 
