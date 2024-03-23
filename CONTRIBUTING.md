@@ -19,8 +19,8 @@ To get started with contributing to BasicLingua-Webapp, follow these steps:
 
 5.Commit your changes with clear and descriptive commit messages like:
    ```bash
-      git commit -am 'Add new feature' 'Add new feature' not 'Added new feture' (for clear distinction)
+   git commit -m 'Add new feature' 'Add new feature' not 'Added new feture'
 
-
+6. Push your changes to your forked repo
 
    
