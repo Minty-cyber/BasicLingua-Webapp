@@ -42,7 +42,7 @@ The features on the sidebar will be updated constantly prior to the ones [here](
 We are excited to receive contributions! Please refer to our [CONTRIBUTING.md](https://github.com/Minty-cyber/BasicLingua-Webapp/edit/main/CONTRIBUTING.md) for comprehensive steps on submitting pull requests to the project.
 
 
-# Acknowledgements 🌟
+# Acknowledgements :pray:
 
 Special thanks to @[FareedKhan-dev](https://github.com/FareedKhan-dev) for creating this Python library.
    
