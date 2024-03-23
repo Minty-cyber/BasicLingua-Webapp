@@ -1,10 +1,10 @@
 # BasicLingua-WebApp 🌐💻
 
-BasicLingua-WebApp is a web platform that showcases the features of BasicLingua, a Gemini LLM-based Python library. This platform demonstrates various linguistic tasks such as tokenization, stemming, lemmatization, and many other features. Users can interact with the functionalities provided by BasicLingua through an intuitive web interface.
+BasicLingua-WebApp is a web platform that showcases the features of BasicLingua, a Gemini LLM-based Python library designed by . This platform demonstrates various linguistic tasks such as tokenization, stemming, lemmatization, and many other features. Users can interact with the functionalities provided by BasicLingua through an intuitive web interface.
 
 
 
-## Features of the Web App
+## Features of the Web App 🌟
 
 - **Tokenization**: Splitting text into individual words or tokens.
 - **Stemming**: Reducing words to their root forms.
