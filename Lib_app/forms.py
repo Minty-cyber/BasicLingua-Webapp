@@ -19,5 +19,5 @@ class ExtractPatternForm(forms.Form):
     user_input = forms.CharField(label='User Input')
     patterns = forms.CharField(label='Patterns')
     
-# class Upocomingsoon(forms.Form):
+class 
     
