@@ -20,5 +20,5 @@ class ExtractPatternForm(forms.Form):
     patterns = forms.CharField(label='Patterns')
     
 class SomeForm(forms.Form):
-    
+    pass
     
