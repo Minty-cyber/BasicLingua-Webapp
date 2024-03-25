@@ -14,7 +14,7 @@ The homepage of the application features an entry field where users can input th
   <img src="images/Screenshot (234).png" width="400">
 </p>
 
-To view a demonstration of our project, navigate to the `clips` directory and open `Final.mp4`.
+To view a demonstration of the project, navigate to the `clips` directory and open `Final.mp4`.
 
 The features on the sidebar will be updated constantly prior to the ones [here](https://github.com/FareedKhan-dev/basiclingua-LLM-Based-NLP#features-of-the-library). You can read more on the library and its features [here]()
 
