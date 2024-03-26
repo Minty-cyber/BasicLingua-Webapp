@@ -121,7 +121,12 @@ color: #2272FF;
     font-size: 16px; 
     line-height: 1.5;
     border-radius: 8px; 
-    text-align: left; 
+    /* text-align: left; 
+    max-width: 100%; 
+    overflow-wrap: break-word; */
+}
+
+#extration-result {
     max-width: 100%; 
     overflow-wrap: break-word;
 }
