@@ -16,7 +16,7 @@ document.getElementById("extract-button").addEventListener("click", function() {
     var userInput = document.getElementById("user_input").value.trim();
     var patterns = document.getElementById("ner_tags").value.trim();
 
-    if (apiKey === "" || userInput === "" || patterns === "") {
+    if (apiKey === "" || userInput === "" || ner_tags === "") {
         alert("Please fill in all required fields.");
         return;
     }
