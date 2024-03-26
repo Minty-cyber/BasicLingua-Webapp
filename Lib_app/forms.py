@@ -22,6 +22,7 @@ class ExtractPatternForm(forms.Form):
 class DetectNERForm(forms.Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
+    ner_tags = forms.Charfield(label='NER-Tags')
     
     
  
