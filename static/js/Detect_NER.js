@@ -34,7 +34,7 @@ document.getElementById("extract-button").addEventListener("click", function() {
         success: function(response) {
             document.getElementById("loader").style.display = "none";
             console.log("Response:", response);
-            document.getElementById("extraction-result").innerHTML = "<h4>Detection Result</h4><p style='text-align: left;'>" + response.extracted_patterns + "</p>";
+            document.getElementById("extraction-result").innerHTML = "<h4>Detection Result</h4><p style='text-align: left;'>" + response.answer + "</p>";
         },
         error: function(xhr, errmsg, err) {
             document.getElementById("loader").style.display = "none";
