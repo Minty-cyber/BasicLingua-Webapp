@@ -24,6 +24,6 @@ def ExtractPattern(api_key, user_input, patterns):
 
 def DetectNER(api_key, user_input, patterns):
     client = BasicLingua(api_key=api_key)
-    answer = client.detect_ner((user_input, ner_tags)
-    return extracted_patterns
+    answer = client.detect_ner(user_input, ner_tags)
+    return answer
 
