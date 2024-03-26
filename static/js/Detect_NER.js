@@ -1,12 +1,12 @@
 window.onload = function() {
     var cachedApiKey = localStorage.getItem("api_key");
     var cachedUserInput = localStorage.getItem("user_input");
-    var cachedTargetLang = localStorage.getItem("patterns");
+    var cachedTargetLang = localStorage.getItem("answer");
     
 
     document.getElementById("api_key").value = cachedApiKey || "";
     document.getElementById("user_input").value = cachedUserInput && "";
-    document.getElementById("patterns").value = cachedTargetLang && "";
+    document.getElementById("answer").value = cachedTargetLang && "";
 };
 
 
@@ -14,9 +14,9 @@ window.onload = function() {
 document.getElementById("extract-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();
     var userInput = document.getElementById("user_input").value.trim();
-    var patterns = document.getElementById("patterns").value.trim();
+    var patterns = document.getElementById("answer").value.trim();
 
-    if (apiKey === "" || userInput === "" || patterns === "") {
+    if (apiKey === "" || userInput === "" || answer === "") {
         alert("Please fill in all required fields.");
         return;
     }
@@ -25,7 +25,7 @@ document.getElementById("extract-button").addEventListener("click", function() {
 
     localStorage.setItem("api_key", apiKey);
     localStorage.setItem("user_input", userInput);
-    localStorage.setItem("patterns", patterns);
+    localStorage.setItem("answer", patterns);
 
     $.ajax({
         url: translationUrl,
@@ -46,7 +46,7 @@ document.getElementById("extract-button").addEventListener("click", function() {
 
 document.getElementById("refresh-button").addEventListener("click", function() {
     document.getElementById("user_input").value = "";
-    document.getElementById("patterns").value = "";
+    document.getElementById("answer").value = "";
     document.getElementById("extraction-result").innerHTML = "";
 
     
