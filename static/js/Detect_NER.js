@@ -6,7 +6,7 @@ window.onload = function() {
 
     document.getElementById("api_key").value = cachedApiKey || "";
     document.getElementById("user_input").value = cachedUserInput && "";
-    document.getElementById("patterns").value = cachedTargetLang && "";
+    document.getElementById("ner_tags").value = cachedTargetLang && "";
 };
 
 
