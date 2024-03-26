@@ -1,12 +1,12 @@
 window.onload = function() {
     var cachedApiKey = localStorage.getItem("api_key");
     var cachedUserInput = localStorage.getItem("user_input");
-    var cachedTargetLang = localStorage.getItem("answer");
+    var cachedTargetLang = localStorage.getItem("ner_tags");
     
 
     document.getElementById("api_key").value = cachedApiKey || "";
     document.getElementById("user_input").value = cachedUserInput && "";
-    document.getElementById("ner_tags").value = cachedTargetLang && "";
+    document.getElementById("patterns").value = cachedTargetLang && "";
 };
 
 
@@ -14,9 +14,9 @@ window.onload = function() {
 document.getElementById("extract-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();
     var userInput = document.getElementById("user_input").value.trim();
-    var patterns = document.getElementById("answer").value.trim();
+    var patterns = document.getElementById("patterns").value.trim();
 
-    if (apiKey === "" || userInput === "" || answer === "") {
+    if (apiKey === "" || userInput === "" || patterns === "") {
         alert("Please fill in all required fields.");
         return;
     }
@@ -25,7 +25,7 @@ document.getElementById("extract-button").addEventListener("click", function() {
 
     localStorage.setItem("api_key", apiKey);
     localStorage.setItem("user_input", userInput);
-    localStorage.setItem("answer", patterns);
+    localStorage.setItem("patterns", patterns);
 
     $.ajax({
         url: translationUrl,
@@ -34,7 +34,7 @@ document.getElementById("extract-button").addEventListener("click", function() {
         success: function(response) {
             document.getElementById("loader").style.display = "none";
             console.log("Response:", response);
-            document.getElementById("extraction-result").innerHTML = "<h4>Detection Result</h4><p style='text-align: left;'>" + response.answer + "</p>";
+            document.getElementById("extraction-result").innerHTML = "<h4>Extraction Result</h4><p style='text-align: left;'>" + response.extracted_patterns + "</p>";
         },
         error: function(xhr, errmsg, err) {
             document.getElementById("loader").style.display = "none";
@@ -46,7 +46,7 @@ document.getElementById("extract-button").addEventListener("click", function() {
 
 document.getElementById("refresh-button").addEventListener("click", function() {
     document.getElementById("user_input").value = "";
-    document.getElementById("answer").value = "";
+    document.getElementById("patterns").value = "";
     document.getElementById("extraction-result").innerHTML = "";
 
     
