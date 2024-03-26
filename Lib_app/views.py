@@ -72,7 +72,7 @@ def extract_pattern_view(request):
 
     return render(request, 'Extract_Pattern.html', {'form': form, 'extracted_patterns': extracted_patterns})
 
-def detect_ner(request):
+def detect_ner_view(request):
     answer = None
     
     if request.method == 'POST':
