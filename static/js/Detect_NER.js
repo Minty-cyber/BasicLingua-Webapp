@@ -51,5 +51,5 @@ document.getElementById("refresh-button").addEventListener("click", function() {
 
     
     localStorage.removeItem("user_input");
-    localStorage.removeItem("target_lang");
+    localStorage.removeItem("ner_tags");
 });
