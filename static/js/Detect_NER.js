@@ -46,7 +46,7 @@ document.getElementById("extract-button").addEventListener("click", function() {
 
 document.getElementById("refresh-button").addEventListener("click", function() {
     document.getElementById("user_input").value = "";
-    document.getElementById("patterns").value = "";
+    document.getElementById("ner_tags").value = "";
     document.getElementById("extraction-result").innerHTML = "";
 
     
