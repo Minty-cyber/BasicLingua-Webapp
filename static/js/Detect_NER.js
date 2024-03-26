@@ -14,7 +14,7 @@ window.onload = function() {
 document.getElementById("extract-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();
     var userInput = document.getElementById("user_input").value.trim();
-    var patterns = document.getElementById("patterns").value.trim();
+    var patterns = document.getElementById("ner_tags").value.trim();
 
     if (apiKey === "" || userInput === "" || patterns === "") {
         alert("Please fill in all required fields.");
