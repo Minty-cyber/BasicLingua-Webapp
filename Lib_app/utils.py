@@ -21,3 +21,9 @@ def ExtractPattern(api_key, user_input, patterns):
     extracted_patterns = client.extract_patterns(user_input, patterns)
     return extracted_patterns
 
+
+def ExtractPattern(api_key, user_input, patterns):
+    client = BasicLingua(api_key=api_key)
+    extracted_patterns = client.extract_patterns(user_input, patterns)
+    return extracted_patterns
+
