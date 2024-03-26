@@ -22,7 +22,7 @@ def ExtractPattern(api_key, user_input, patterns):
     return extracted_patterns
 
 
-def DetectNER(api_key, user_input, patterns):
+def DetectNER(api_key, user_input, ner_tags):
     client = BasicLingua(api_key=api_key)
     answer = client.detect_ner(user_input, ner_tags)
     return answer
