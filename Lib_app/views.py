@@ -74,3 +74,19 @@ def extract_pattern_view(request):
 
 def detect_ner(request):
     answer = None
+    
+    if request.method == 'POST':
+        form = DetectNERForm(request.POST)
+        if form.is_valid():
+            api_key = form.cleaned_data['api_key']
+            user_input = form.cleaned_data['user_input']
+            patterns = form.cleaned_data['patterns']
+            extracted_patterns = ExtractPattern(api_key, user_input, patterns) 
+
+            return JsonResponse({'extracted_patterns': extracted_patterns})
+    else:
+        form = ExtractPatternForm()
+
+    return render(request, 'Extract_Pattern.html', {'form': form, 'extracted_patterns': extracted_patterns})
+
+    
