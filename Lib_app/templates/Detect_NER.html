@@ -32,7 +32,7 @@ Extract Patterns
                     <div class="form-group">
                         <input type="text" class="form-control" id="patterns" name="patterns" style="color: white;" placeholder="email, phone number, ..." value="{{ form.answer.value }}">
                     </div>
-                    <button id="extract-button" type="button" class="btn btn-primary">Extract</button>
+                    <button id="extract-button" type="button" class="btn btn-primary">Process</button>
                     <button id="refresh-button" type="button" class="btn btn-secondary">Refresh</button> 
                 </form>
                 
@@ -41,8 +41,8 @@ Extract Patterns
                 
                 <div id="extraction-result" style="margin-top: 20px;">
                     {% if extracted_patterns %}
-                    <h1 style="font-size: 25px;">Extraction Result</h1>
-                    <p style="text-align: left;">{{extracted_patterns}}</p>
+                    <h1 style="font-size: 25px;">Detection Result</h1>
+                    <p style="text-align: left;">{{answer}}</p>
                     {% endif %}
                 </div>
             
