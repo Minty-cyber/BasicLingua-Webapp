@@ -78,15 +78,15 @@ def detect_ner_view(request):
     if request.method == 'POST':
         form = DetectNERForm(request.POST)
         if form.is_valid():
-            api_key = form.cleaned_data['api_key']
+            api_key = form.cleaned_data['api_key']Z
             user_input = form.cleaned_data['user_input']
             ner_tags = form.cleaned_data['ner_tags']
-            answer = ExtractPattern(api_key, user_input, ner_tags) 
+            # answer = ExtractPattern(api_key, user_input, ner_tags) 
 
             return JsonResponse({'answer': answer})
     else:
         form = ExtractPatternForm()
 
-    return render(request, 'Extract_Pattern.html', {'form': form, 'extracted_patterns': extracted_patterns})
+    return render(request, 'Detect_NER.html', {'form': form, 'answer': answer})
 
     
