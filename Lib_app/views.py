@@ -80,7 +80,7 @@ def detect_ner(request):
         if form.is_valid():
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
-            patterns = form.cleaned_data['patterns']
+            ner_tags = form.cleaned_data['ner_tags']
             extracted_patterns = ExtractPattern(api_key, user_input, patterns) 
 
             return JsonResponse({'extracted_patterns': extracted_patterns})
