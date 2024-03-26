@@ -25,7 +25,7 @@ document.getElementById("extract-button").addEventListener("click", function() {
 
     localStorage.setItem("api_key", apiKey);
     localStorage.setItem("user_input", userInput);
-    localStorage.setItem("patterns", patterns);
+    localStorage.setItem("ner_tags", patterns);
 
     $.ajax({
         url: translationUrl,
