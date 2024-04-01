@@ -34,6 +34,8 @@ window.onload = function() {
                 document.getElementById("loader").style.display = "none";
                 console.log("Response:", response);
                 document.getElementById("translation-result").innerHTML = "<h4>Translation Result</h4><p style='text-align: left;'>" + response.translated_text + "</p>";
+                document.getElementById("translation-result").innerHTML = "<h4>Text Replacement Result</h4><p style='text-align: left; max-width: 100%; overflow-wrap: break-word;'>" + response.answer + "</p>";
+
             },
             error: function(xhr, errmsg, err) {
                 document.getElementById("loader").style.display = "none";
