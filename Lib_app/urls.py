@@ -7,6 +7,8 @@ urlpatterns = [
     path('text-correction/', text_correction_view, name='text-correction'),
     path('extract-patterns/', extract_pattern_view, name='extract-patterns'),
     path('detect-ner/', detect_ner_view, name='detect-ner'),
+    path('text-summarize/', detect_ner_view, name='detect-ner'),
+    
     
     
     
