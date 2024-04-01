@@ -14,7 +14,7 @@ window.onload = function() {
 document.getElementById("summarize-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();
     var userInput = document.getElementById("user_input").value.trim();
-    var patterns = document.getElementById("ner_tags").value.trim();
+    var patterns = document.getElementById("summary_length").value.trim();
 
     if (apiKey === "" || userInput === "" || ner_tags === "") {
         alert("Please fill in all required fields.");
