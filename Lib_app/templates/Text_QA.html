@@ -30,7 +30,7 @@ Text Q&A
                         <input type="text" class="form-control" id="user_input" name="user_input" style="color: white;" placeholder="User Input..." value="{{ form.user_input.value }}">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="question" name="summary_length" style="color: white;" placeholder="Question ..." value="{{ form.question.value }}">
+                        <input type="text" class="form-control" id="question" name="question" style="color: white;" placeholder="Question ..." value="{{ form.question.value }}">
                     </div>
                     <button id="answer-button" type="button" class="btn btn-primary">Process</button>
                     <button id="refresh-button" type="button" class="btn btn-secondary">Refresh</button> 
@@ -40,7 +40,7 @@ Text Q&A
                 
                 
                 <div id="summary-result" style="margin-top: 20px;">
-                    {% if summary %}
+                    {% if answer %}
                         <h1 style="font-size: 25px;">Summarized Text<h1>
                         <p style="word-wrap: break-word;">{{summary}}</p>
                     {% endif %}
