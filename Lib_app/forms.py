@@ -28,7 +28,11 @@ class TextSummarizeForm(forms.Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
     summary_length = forms.CharField(label='Summary-Length')
-    
+
+class TextSummarizeForm(forms.Form):
+    api_key = forms.CharField(label='API Key')
+    user_input = forms.CharField(label='User Input')
+    summary_length = forms.CharField(label='Summary-Length')
     
  
     
