@@ -104,6 +104,6 @@ def text_summarize_view(request):
     else:
         form = TextSummarizeForm()
 
-    return render(request, 'Detect_NER.html', {'form': form, 'answer': answer})
+    return render(request, 'Detect_NER.html', {'form': form, 'summary': summary})
 
     
