@@ -117,7 +117,7 @@ def text_qa_view(request):
             question = form.cleaned_data['question']
             answer = TextQA(api_key, user_input, question) 
 
-            return JsonResponse({'answer': question})
+            return JsonResponse({'answer': answer})
     else:
         form = TextQAForm()
 
