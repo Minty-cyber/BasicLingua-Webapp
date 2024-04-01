@@ -115,12 +115,12 @@ def text_qa_view(request):
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
             question = form.cleaned_data['question']
-            summary = TextSummarize(api_key, user_input, summary_length) 
+            answer = TextSummarize(api_key, user_input, summary_length) 
 
-            return JsonResponse({'summary': summary})
+            return JsonResponse({'question': question})
     else:
         form = TextSummarizeForm()
 
-    return render(request, 'Text_Summarize.html', {'form': form, 'summary': summary})
+    return render(request, 'Text_Summarize.html', {'form': form, 'question': question})
 
     
