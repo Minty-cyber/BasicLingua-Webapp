@@ -31,7 +31,6 @@ window.onload = function() {
             success: function(response) {
                 document.getElementById("loader").style.display = "none";
                 console.log("Response:", response);
-            
                 document.getElementById("corrected-result").innerHTML = "<h4>Corrected Text</h4><p style='text-align: left; max-width: 100%; overflow-wrap: break-word;'>" + response.corrected_text + "</p>";
             },
             error: function(xhr, errmsg, err) {
