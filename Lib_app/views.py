@@ -97,7 +97,7 @@ def text_summarize_view(request):
         if form.is_valid():
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
-            ner_tags = form.cleaned_data['ner_tags']
+            ner_tags = form.cleaned_data['summary_length']
             answer = DetectNER(api_key, user_input, ner_tags) 
 
             return JsonResponse({'answer': answer})
