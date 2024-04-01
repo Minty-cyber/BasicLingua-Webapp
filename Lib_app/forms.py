@@ -29,7 +29,7 @@ class TextSummarizeForm(forms.Form):
     user_input = forms.CharField(label='User Input')
     summary_length = forms.CharField(label='Summary-Length')
 
-class TextSummarizeForm(forms.Form):
+class TextQAForm(forms.Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
     question = forms.CharField(label='Question')
