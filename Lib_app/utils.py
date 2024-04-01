@@ -27,3 +27,4 @@ def DetectNER(api_key, user_input, ner_tags):
     answer = client.detect_ner(user_input, ner_tags)
     return answer
 
+def TextSummarize
