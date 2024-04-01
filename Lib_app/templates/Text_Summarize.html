@@ -41,7 +41,7 @@ Text Summarize
                 
                 <div id="extraction-result" style="margin-top: 20px;">
                     {% if summary %}
-                        <h1 style="font-size: 25px;">Summarized Texth1>
+                        <h1 style="font-size: 25px;">Summarized Text<h1>
                         <p style="word-wrap: break-word;">{{summary}}</p>
                     {% endif %}
                 </div>    
@@ -53,7 +53,7 @@ Text Summarize
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-    <script>var translationUrl = "{% url 'detect-ner' %}";</script>
+    <script>var translationUrl = "{% url 'text-summarize' %}";</script>
     
     <script src="{% static 'js/Detect_NER.js' %}"></script>
 
