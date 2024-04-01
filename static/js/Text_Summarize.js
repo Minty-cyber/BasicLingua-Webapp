@@ -11,7 +11,7 @@ window.onload = function() {
 
 
 
-document.getElementById("extract-button").addEventListener("click", function() {
+document.getElementById("summarize-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();
     var userInput = document.getElementById("user_input").value.trim();
     var patterns = document.getElementById("ner_tags").value.trim();
