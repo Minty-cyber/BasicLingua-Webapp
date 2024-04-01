@@ -24,7 +24,7 @@ class DetectNERForm(forms.Form):
     user_input = forms.CharField(label='User Input')
     ner_tags = forms.CharField(label='NER-Tags')
     
-class DetectNERForm(forms.Form):
+class TextSummarizeForm(forms.Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
     ner_tags = forms.CharField(label='NER-Tags')
