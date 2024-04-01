@@ -46,8 +46,8 @@ document.getElementById("summarize-button").addEventListener("click", function()
 
 document.getElementById("refresh-button").addEventListener("click", function() {
     document.getElementById("user_input").value = "";
-    document.getElementById("ner_tags").value = "";
-    document.getElementById("extraction-result").innerHTML = "";
+    document.getElementById("summary_length").value = "";
+    document.getElementById("summary-result").innerHTML = "";
 
     
     localStorage.removeItem("user_input");
