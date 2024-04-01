@@ -25,7 +25,7 @@ document.getElementById("summarize-button").addEventListener("click", function()
 
     localStorage.setItem("api_key", apiKey);
     localStorage.setItem("user_input", userInput);
-    localStorage.setItem("ner_tags", patterns);
+    localStorage.setItem("summary_length", patterns);
 
     $.ajax({
         url: translationUrl,
