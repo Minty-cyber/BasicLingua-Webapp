@@ -29,3 +29,5 @@ def DetectNER(api_key, user_input, ner_tags):
 
 def TextSummarize(api_key, user_input, summary_length):
     client = BasicLingua(api_key=api_key)
+    summary = client.detect_ner(user_input, summary_length)
+    
