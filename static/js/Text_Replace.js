@@ -32,6 +32,7 @@ document.getElementById("process-button").addEventListener("click", function() {
         success: function(response) {
             document.getElementById("loader").style.display = "none";
             console.log("Response:", response);
+            
             document.getElementById("processed-result").innerHTML = "<h4>Text Replacement Result</h4><p style='text-align: left; max-width: 100%; overflow-wrap: break-word;'>" + response.answer + "</p>";
         },
         error: function(xhr, errmsg, err) {
