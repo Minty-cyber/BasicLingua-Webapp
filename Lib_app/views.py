@@ -106,7 +106,7 @@ def text_summarize_view(request):
 
     return render(request, 'Text_Summarize.html', {'form': form, 'summary': summary})
 
-def text_summarize_view(request):
+def text_qa_view(request):
     summary = None
     
     if request.method == 'POST':
