@@ -31,5 +31,6 @@ def TextSummarize(api_key, user_input, summary_length):
     summary = client.text_summarize(user_input, summary_length)
     return summary
 
-def TextQA(api_key, user_input, question)
+def TextQA(api_key, user_input, question):
+    client = BasicLingua(api_key=api_key)
     
