@@ -38,7 +38,7 @@ document.getElementById("summarize-button").addEventListener("click", function()
         },
         error: function(xhr, errmsg, err) {
             document.getElementById("loader").style.display = "none";
-            document.getElementById("extraction-result").innerHTML = "<h4>Error retrieving output</h4><p style='text-align: left;'>" + xhr.status + "</p>";
+            document.getElementById("summary-result").innerHTML = "<h4>Error retrieving output</h4><p style='text-align: left;'>" + xhr.status + "</p>";
             console.log("Error:", xhr.status);
         }
     });
