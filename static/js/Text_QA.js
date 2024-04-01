@@ -46,8 +46,8 @@ document.getElementById("answer-button").addEventListener("click", function() {
 
 document.getElementById("refresh-button").addEventListener("click", function() {
     document.getElementById("user_input").value = "";
-    document.getElementById("summary_length").value = "";
-    document.getElementById("summary-result").innerHTML = "";
+    document.getElementById("question").value = "";
+    document.getElementById("answer-result").innerHTML = "";
 
     
     localStorage.removeItem("user_input");
