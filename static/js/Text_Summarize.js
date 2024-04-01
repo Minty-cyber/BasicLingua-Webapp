@@ -34,7 +34,7 @@ document.getElementById("summarize-button").addEventListener("click", function()
         success: function(response) {
             document.getElementById("loader").style.display = "none";
             console.log("Response:", response);
-            document.getElementById("summary-result").innerHTML = "<h4>Extraction Result</h4><p style='text-align: left; max-width: 100%; overflow-wrap: break-word;'>" + response.answer + "</p>";
+            document.getElementById("summary-result").innerHTML = "<h4>Summarized Text</h4><p style='text-align: left; max-width: 100%; overflow-wrap: break-word;'>" + response.summary + "</p>";
         },
         error: function(xhr, errmsg, err) {
             document.getElementById("loader").style.display = "none";
