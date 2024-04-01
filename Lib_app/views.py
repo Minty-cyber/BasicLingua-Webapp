@@ -106,4 +106,21 @@ def text_summarize_view(request):
 
     return render(request, 'Text_Summarize.html', {'form': form, 'summary': summary})
 
+def text_summarize_view(request):
+    summary = None
+    
+    if request.method == 'POST':
+        form = TextSummarizeForm(request.POST)
+        if form.is_valid():
+            api_key = form.cleaned_data['api_key']
+            user_input = form.cleaned_data['user_input']
+            summary_length = form.cleaned_data['summary_length']
+            summary = TextSummarize(api_key, user_input, summary_length) 
+
+            return JsonResponse({'summary': summary})
+    else:
+        form = TextSummarizeForm()
+
+    return render(request, 'Text_Summarize.html', {'form': form, 'summary': summary})
+
     
