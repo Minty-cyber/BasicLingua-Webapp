@@ -89,7 +89,7 @@ def detect_ner_view(request):
 
     return render(request, 'Detect_NER.html', {'form': form, 'answer': answer})
 
-def detect_ner_view(request):
+def text_summarize_view(request):
     answer = None
     
     if request.method == 'POST':
