@@ -27,7 +27,7 @@ class DetectNERForm(forms.Form):
 class TextSummarizeForm(forms.Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
-    summary = forms.CharField(label='Summary-Length')
+    summary_length = forms.CharField(label='Summary-Length')
     
     
  
