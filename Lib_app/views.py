@@ -98,7 +98,7 @@ def text_summarize_view(request):
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
             ner_tags = form.cleaned_data['summary_length']
-            answer = TextSummarize(api_key, user_input, ner_tags) 
+            answer = TextSummarize(api_key, user_input, summary_length) 
 
             return JsonResponse({'answer': answer})
     else:
