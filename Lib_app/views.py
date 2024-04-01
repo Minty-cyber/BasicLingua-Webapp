@@ -119,7 +119,7 @@ def text_qa_view(request):
 
             return JsonResponse({'question': question})
     else:
-        form = TextSummarizeForm()
+        form = TextQAForm()
 
     return render(request, 'Text_Summarize.html', {'form': form, 'question': question})
 
