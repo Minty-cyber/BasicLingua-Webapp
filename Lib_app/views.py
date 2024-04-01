@@ -114,7 +114,7 @@ def text_qa_view(request):
         if form.is_valid():
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
-            summary_length = form.cleaned_data['question']
+            question = form.cleaned_data['question']
             summary = TextSummarize(api_key, user_input, summary_length) 
 
             return JsonResponse({'summary': summary})
