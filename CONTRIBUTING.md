@@ -5,6 +5,7 @@ Thank you for considering to contribute to BasicLingua-Webapp. We welcome contri
 ### Follow these steps :rocket:
 To get started with contributing to BasicLingua-Webapp, follow these steps:
 
+
 1. **Fork the repository**: Click on the "Fork" button of the repository's page to create your own fork of the project. 
 
 2. **Clone the repository**: Clone your fork of the repository to your local machine using the following command:
