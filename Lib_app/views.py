@@ -100,7 +100,7 @@ def text_summarize_view(request):
             ner_tags = form.cleaned_data['summary_length']
             answer = TextSummarize(api_key, user_input, summary_length) 
 
-            return JsonResponse({'answer': answer})
+            return JsonResponse({'summary': summary})
     else:
         form = DetectNERForm()
 
