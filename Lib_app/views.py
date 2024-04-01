@@ -121,6 +121,6 @@ def text_qa_view(request):
     else:
         form = TextQAForm()
 
-    return render(request, 'Text_QA.html', {'form': form, 'answer': question})
+    return render(request, 'Text_QA.html', {'form': form, 'answer': answer})
 
     
