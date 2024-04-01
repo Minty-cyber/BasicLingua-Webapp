@@ -37,7 +37,6 @@ window.onload = function() {
             },
             error: function(xhr, errmsg, err) {
                 document.getElementById("loader").style.display = "none";
-                document.getElementById("translation-result").innerHTML = "<h4>Text Replacement Result</h4><p style='text-align: left; max-width: 100%; overflow-wrap: break-word;'>" + response.answer + "</p>";
                 document.getElementById("translation-result").innerHTML = "<h4>Error retrieving output</h4><p style='text-align: left;'>" + xhr.status + "</p>"
                 console.log("Error:", xhr.status + ": " + xhr.responseText);
             }
