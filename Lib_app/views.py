@@ -124,7 +124,7 @@ def text_qa_view(request):
     return render(request, 'Text_QA.html', {'form': form, 'answer': answer})
 
 def text_correction_view(request):
-    corrected_text = None
+    intent = None
 
     if request.method == 'POST':
         form = TextCorrectionForm(request.POST)
