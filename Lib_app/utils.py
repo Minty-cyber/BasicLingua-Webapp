@@ -37,5 +37,5 @@ def TextQA(api_key, user_input, question):
     return answer
     
 def TextIntent(api_key, user_input, intent):
-    client = BasicLingua(api_key=)
+    client = BasicLingua(api_key=api_key)
     
