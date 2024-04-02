@@ -131,7 +131,7 @@ def text_intent_view(request):
         if form.is_valid():
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
-            intent = Text_Correction(api_key, user_input) 
+            intent = TextIntent(api_key, user_input) 
 
             return JsonResponse({'intent': intent})
     else:
