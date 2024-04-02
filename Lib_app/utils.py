@@ -36,5 +36,5 @@ def TextQA(api_key, user_input, question):
     answer = client.text_qna(user_input, question)
     return answer
     
-def TextIntent(api)
+def TextIntent(api_key, user_input)
     
