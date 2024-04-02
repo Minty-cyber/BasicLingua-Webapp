@@ -123,4 +123,5 @@ def text_qa_view(request):
 
     return render(request, 'Text_QA.html', {'form': form, 'answer': answer})
 
+
     
