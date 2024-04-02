@@ -9,7 +9,7 @@ urlpatterns = [
     path('detect-ner/', detect_ner_view, name='detect-ner'),
     path('text-summarize/', text_summarize_view, name='text-summarize'),
     path('text-qa/', text_qa_view, name='text-qa'),
-    path('text-intent/', text_intent_view, name='text-correction'),
+    path('text-intent/', text_intent_view, name='text-intent'),
     
     
       
