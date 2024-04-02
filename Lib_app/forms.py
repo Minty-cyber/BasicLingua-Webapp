@@ -34,7 +34,8 @@ class TextQAForm(forms.Form):
     user_input = forms.CharField(label='User Input')
     question = forms.CharField(label='Question')
     
-class TextIntentForm(forms.Form)
+class TextIntentForm(forms.Form):
+    api_key = forms.CharField(label='API Key')
     
  
     
