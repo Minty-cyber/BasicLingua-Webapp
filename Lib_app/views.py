@@ -133,7 +133,7 @@ def text_intent_view(request):
             user_input = form.cleaned_data['user_input']
             intent = Text_Correction(api_key, user_input) 
 
-            return JsonResponse({'corrected_text': corrected_text})
+            return JsonResponse({'intent': corrected_text})
     else:
         form = TextCorrectionForm()
 
