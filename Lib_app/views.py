@@ -127,7 +127,7 @@ def text_intent_view(request):
     intent = None
 
     if request.method == 'POST':
-        form = TextCorrectionForm(request.POST)
+        form = TextIntentForm(request.POST)
         if form.is_valid():
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
