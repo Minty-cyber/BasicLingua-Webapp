@@ -34,5 +34,7 @@ class TextQAForm(forms.Form):
     user_input = forms.CharField(label='User Input')
     question = forms.CharField(label='Question')
     
+clas
+    
  
     
