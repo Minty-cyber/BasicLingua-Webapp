@@ -123,7 +123,7 @@ def text_qa_view(request):
 
     return render(request, 'Text_QA.html', {'form': form, 'answer': answer})
 
-def text_correction_view(request):
+def text_intent_view(request):
     intent = None
 
     if request.method == 'POST':
