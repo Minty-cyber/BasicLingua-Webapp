@@ -135,7 +135,7 @@ def text_intent_view(request):
 
             return JsonResponse({'intent': intent})
     else:
-        form = TextCorrectionForm()
+        form = TextIntentForm()
 
     return render(request, 'Text_Correction.html', {'form': form, 'corrected_text': corrected_text})
     
