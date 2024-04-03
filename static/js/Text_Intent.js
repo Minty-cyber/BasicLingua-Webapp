@@ -1,7 +1,7 @@
 window.onload = function() {
     var cachedApiKey = localStorage.getItem("api_key");
     var cachedUserInput = localStorage.getItem("user_input");
-    var cachedQuestion = localStorage.getItem("question");
+    var cachedQuestion = localStorage.getItem("task_type");
     
 
     document.getElementById("api_key").value = cachedApiKey || "";
