@@ -6,7 +6,7 @@ window.onload = function() {
 
     document.getElementById("api_key").value = cachedApiKey || "";
     document.getElementById("user_input").value = cachedUserInput && "";
-    document.getElementById("task_type").value = cachedQuestion && "";
+    document.getElementById("task_type").value = cachedTaskType && "";
 };
 
 
@@ -14,7 +14,7 @@ window.onload = function() {
 document.getElementById("answer-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();
     var userInput = document.getElementById("user_input").value.trim();
-    var patterns = document.getElementById("question").value.trim();
+    var patterns = document.getElementById("task_type").value.trim();
 
     if (apiKey === "" || userInput === "" || question === "") {
         alert("Please fill in all required fields.");
