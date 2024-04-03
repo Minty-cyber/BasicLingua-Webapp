@@ -41,7 +41,7 @@ def TextIntent(api_key, user_input):
     intent = client.text_intent(user_input)
     return intent
 
-def TextLemstem(api_key, user_input, question):
+def TextLemstem(api_key, user_input, task_type):
     client = BasicLingua(api_key=api_key)
     answer = client.text_lemstem(user_input, )
     return answer
