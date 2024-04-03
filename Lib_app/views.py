@@ -139,5 +139,19 @@ def text_intent_view(request):
 
     return render(request, 'Text_Intent.html', {'form': form, 'intent': intent})
 
+def text_lemstem_view(request):
+    intent = None
 
+    if request.method == 'POST':
+        form = TextIntentForm(request.POST)
+        if form.is_valid():
+            api_key = form.cleaned_data['api_key']
+            user_input = form.cleaned_data['user_input']
+            intent = TextIntent(api_key, user_input) 
+
+            return JsonResponse({'intent': intent})
+    else:
+        form = TextIntentForm()
+
+    return render(request, 'Text_Intent.html', {'form': form, 'intent': intent})
     
