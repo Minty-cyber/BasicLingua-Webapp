@@ -139,4 +139,5 @@ def text_intent_view(request):
 
     return render(request, 'Text_Intent.html', {'form': form, 'intent': intent})
 
+
     
