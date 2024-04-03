@@ -147,7 +147,7 @@ def text_lemstem_view(request):
         if form.is_valid():
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
-            answer = TextIntent(api_key, user_input) 
+            answer = TextLemstem(api_key, user_input) 
 
             return JsonResponse({'intent': intent})
     else:
