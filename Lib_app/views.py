@@ -151,7 +151,7 @@ def text_lemstem_view(request):
 
             return JsonResponse({'answer': answer})
     else:
-        form = TextIntentForm()
+        form = TextLemstemForm()
 
     return render(request, 'Text_Intent.html', {'form': form, 'intent': intent})
     
