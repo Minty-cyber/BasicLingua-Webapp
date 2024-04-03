@@ -16,7 +16,7 @@ document.getElementById("answer-button").addEventListener("click", function() {
     var userInput = document.getElementById("user_input").value.trim();
     var taskTpye = document.getElementById("task_type").value.trim();
 
-    if (apiKey === "" || userInput === "" || task_type === "") {
+    if (apiKey === "" || userInput === "" || taskType === "") {
         alert("Please fill in all required fields.");
         return;
     }
