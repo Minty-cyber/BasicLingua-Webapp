@@ -14,7 +14,7 @@ window.onload = function() {
 document.getElementById("answer-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();
     var userInput = document.getElementById("user_input").value.trim();
-    var patterns = document.getElementById("task_type").value.trim();
+    var taskTpye = document.getElementById("task_type").value.trim();
 
     if (apiKey === "" || userInput === "" || task_type === "") {
         alert("Please fill in all required fields.");
