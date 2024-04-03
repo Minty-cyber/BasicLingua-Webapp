@@ -145,6 +145,7 @@ def text_lemstem_view(request):
     if request.method == 'POST':
         form = TextLemstemForm(request.POST)
         if form.is_valid():
+            task_type = form.cleaned_data['task']
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
             answer = TextLemstem(api_key, user_input) 
