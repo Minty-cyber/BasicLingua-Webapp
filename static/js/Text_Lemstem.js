@@ -25,7 +25,7 @@ document.getElementById("answer-button").addEventListener("click", function() {
 
     localStorage.setItem("api_key", apiKey);
     localStorage.setItem("user_input", userInput);
-    localStorage.setItem("question", patterns);
+    localStorage.setItem("task_type", patterns);
 
     $.ajax({
         url: translationUrl,
