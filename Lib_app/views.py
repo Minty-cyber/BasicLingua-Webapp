@@ -153,5 +153,5 @@ def text_lemstem_view(request):
     else:
         form = TextLemstemForm()
 
-    return render(request, 'Text_Intent.html', {'form': form, 'intent': intent})
+    return render(request, 'Text_Lemstem.html', {'form': form, 'intent': intent})
     
