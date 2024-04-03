@@ -140,7 +140,7 @@ def text_intent_view(request):
     return render(request, 'Text_Intent.html', {'form': form, 'intent': intent})
 
 def text_lemstem_view(request):
-    intent = None
+    answer = None
 
     if request.method == 'POST':
         form = TextIntentForm(request.POST)
