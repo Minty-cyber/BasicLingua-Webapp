@@ -149,7 +149,7 @@ def text_lemstem_view(request):
             user_input = form.cleaned_data['user_input']
             answer = TextLemstem(api_key, user_input) 
 
-            return JsonResponse({'answer': intent})
+            return JsonResponse({'answer': answer})
     else:
         form = TextIntentForm()
 
