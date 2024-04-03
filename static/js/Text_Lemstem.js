@@ -31,7 +31,7 @@ window.onload = function() {
             success: function(response) {
                 document.getElementById("loader").style.display = "none";
                 console.log("Response:", response);
-                document.getElementById("corrected-result").innerHTML = "<h4>Answer</h4><p style='text-align: left; max-width: 100%; overflow-wrap: break-word;'>" + response.answer + "</p>";
+                document.getElementById("corrected-result").innerHTML = "<h4>Answer</h4><p style='text-align: left; max-width: 100%; overflow-wrap: break-word;'>" + response.answworkinger + "</p>";
             },
             error: function(xhr, errmsg, err) {
                 document.getElementById("loader").style.display = "none";
