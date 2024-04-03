@@ -43,4 +43,4 @@ def TextIntent(api_key, user_input):
 
 def TextLemstem(api_key, user_input):
     client = BasicLingua(api_key=api_key)
-    answer = client.text_lemstem
+    answer = client.text_lemstem()
