@@ -41,5 +41,5 @@ def TextIntent(api_key, user_input):
     intent = client.text_intent(user_input)
     return intent
 
-
+def TextLemstem
     
