@@ -41,7 +41,7 @@ class TextIntentForm(forms.Form):
 class TextLemstemForm(forms.Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
-    ner_tags = forms.CharField(label='NER-Tags')
+    task_type = forms.CharField(label='NER-Tags')
     
     
  
