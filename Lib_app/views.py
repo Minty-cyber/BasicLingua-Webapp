@@ -170,5 +170,5 @@ def text_tokenize_view(request):
     else:
         form = TextTokenizeForm()
 
-    return render(request, 'Text_Lemstem.html', {'form': form, 'answer': answer})
+    return render(request, 'Text_Tokenize.html', {'form': form, 'answer': answer})
     
