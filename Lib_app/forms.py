@@ -43,7 +43,8 @@ class TextLemstemForm(forms.Form):
     user_input = forms.CharField(label='User Input')
     task_type = forms.CharField(label='Task Type')
     
-class TextTokenize(forms. Form)
+class TextTokenize(forms. Form):
+    
 
  
     
