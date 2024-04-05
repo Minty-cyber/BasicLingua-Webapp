@@ -50,3 +50,4 @@ def TextTokenize(api_key, user_input):
     client = BasicLingua(api_key=api_key)
     answer = client.text_tokenize(user_input)
     return answer
+
