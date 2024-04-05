@@ -164,7 +164,6 @@ def text_tokenize_view(request):
         if form.is_valid():
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
-            task_type = form.cleaned_data['task_type']
             answer = TextLemstem(api_key, user_input, task_type) 
 
             return JsonResponse({'answer': answer})
