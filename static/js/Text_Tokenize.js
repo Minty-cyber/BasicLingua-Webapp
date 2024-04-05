@@ -44,6 +44,5 @@ document.getElementById("refresh-button").addEventListener("click", function() {
     document.getElementById("user_input").value = "";
     document.getElementById("answer-result").innerHTML = "";
 
-    
     localStorage.removeItem("user_input");
 });
