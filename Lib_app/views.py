@@ -156,5 +156,20 @@ def text_lemstem_view(request):
 
     return render(request, 'Text_Lemstem.html', {'form': form, 'answer': answer})
 
+def text_lemstem_view(request):
+    answer = None
 
+    if request.method == 'POST':
+        form = TextLemstemForm(request.POST)
+        if form.is_valid():
+            api_key = form.cleaned_data['api_key']
+            user_input = form.cleaned_data['user_input']
+            task_type = form.cleaned_data['task_type']
+            answer = TextLemstem(api_key, user_input, task_type) 
+
+            return JsonResponse({'answer': answer})
+    else:
+        form = TextLemstemForm()
+
+    return render(request, 'Text_Lemstem.html', {'form': form, 'answer': answer})
     
