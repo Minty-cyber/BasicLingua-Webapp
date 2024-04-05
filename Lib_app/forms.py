@@ -44,7 +44,7 @@ class TextLemstemForm(forms.Form):
     task_type = forms.CharField(label='Task Type')
     
 class TextTokenize(forms. Form):
-    api_key = 
+    api_key = forms.CharField
 
  
     
