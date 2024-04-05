@@ -156,7 +156,7 @@ def text_lemstem_view(request):
 
     return render(request, 'Text_Lemstem.html', {'form': form, 'answer': answer})
 
-def text_lemstem_view(request):
+def text_tokenize_view(request):
     answer = None
 
     if request.method == 'POST':
