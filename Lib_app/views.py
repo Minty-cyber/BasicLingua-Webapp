@@ -155,4 +155,6 @@ def text_lemstem_view(request):
         form = TextLemstemForm()
 
     return render(request, 'Text_Lemstem.html', {'form': form, 'answer': answer})
+
+
     
