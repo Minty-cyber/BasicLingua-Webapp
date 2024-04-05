@@ -46,6 +46,6 @@ class TextLemstemForm(forms.Form):
 class TextTokenize(forms. Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
-
+    
  
     
