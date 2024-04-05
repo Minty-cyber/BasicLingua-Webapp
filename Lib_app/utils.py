@@ -45,3 +45,4 @@ def TextLemstem(api_key, user_input, task_type):
     client = BasicLingua(api_key=api_key)
     answer = client.text_lemstem(user_input, task_type)
     return answer
+
