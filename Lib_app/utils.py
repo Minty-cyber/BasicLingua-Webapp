@@ -48,3 +48,4 @@ def TextLemstem(api_key, user_input, task_type):
 
 def TextTokenize(api_key, user_input):
     client = BasicLingua(api=api_key)
+    answer = client
