@@ -51,4 +51,5 @@ def TextTokenize(api_key, user_input):
     answer = client.text_tokenize(user_input)
     return answer
 
-def TextEmbed(api_key, user_input)
+def TextEmbed(api_key, user_input):
+    
