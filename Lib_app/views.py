@@ -185,7 +185,7 @@ def text_embedd_view(request):
 
             return JsonResponse({'answer': answer})
     else:
-        form = TextLemstemForm()
+        form = TextEmbeddForm()
 
     return render(request, 'Text_Lemstem.html', {'form': form, 'answer': answer})
     
