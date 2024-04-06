@@ -12,6 +12,8 @@ urlpatterns = [
     path('text-intent/', text_intent_view, name='text-intent'),
     path('text-lemstem/', text_lemstem_view, name='text-lemstem'),
     path('text-tokenize/', text_tokenize_view, name='text-tokenize'),
+    path('text-/', text_tokenize_view, name='text-tokenize'),
+    
     
     
 
