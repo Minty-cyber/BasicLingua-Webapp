@@ -51,7 +51,7 @@ def TextTokenize(api_key, user_input):
     answer = client.text_tokenize(user_input)
     return answer
 
-def TextEmbedd(api_key, user_input):
+def TextEmbedd(api_key, user_input, task_type):
     client =  BasicLingua(api_key=api_key)
     answer = client.text_embedd(user_input, task_type)
     return answer
