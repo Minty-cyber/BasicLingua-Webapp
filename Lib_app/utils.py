@@ -52,5 +52,5 @@ def TextTokenize(api_key, user_input):
     return answer
 
 def TextEmbed(api_key, user_input):
-    client =  BasicLingua
+    client =  BasicLingua()
     
