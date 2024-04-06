@@ -34,7 +34,6 @@ document.getElementById("answer-button").addEventListener("click", function() {
         success: function(response) {
             document.getElementById("loader").style.display = "none";
             console.log("Response:", response);
-            var truncatedAnswer = .substring(0, 10);
             document.getElementById("answer-result").innerHTML = "<h4>Answer</h4><p style='text-align: left; max-width: 100%; overflow-wrap: break-word;'>" + response.answer + "</p>";
         },
         error: function(xhr, errmsg, err) {
