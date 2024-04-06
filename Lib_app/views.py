@@ -171,4 +171,6 @@ def text_tokenize_view(request):
         form = TextTokenizeForm()
 
     return render(request, 'Text_Tokenize.html', {'form': form, 'answer': answer})
+
+
     
