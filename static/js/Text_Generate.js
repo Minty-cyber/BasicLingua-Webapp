@@ -6,7 +6,7 @@ window.onload = function() {
 
     document.getElementById("api_key").value = cachedApiKey || "";
     document.getElementById("user_input").value = cachedUserInput && "";
-    document.getElementById("task_type").value = cachedTaskType && "";
+    document.getElementById("ans_length").value = cachedTaskType && "";
 };
 
 
