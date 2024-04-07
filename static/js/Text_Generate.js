@@ -1,7 +1,7 @@
 window.onload = function() {
     var cachedApiKey = localStorage.getItem("api_key");
     var cachedUserInput = localStorage.getItem("user_input");
-    var cachedTaskType = localStorage.getItem("ans_length");
+    var cachedAnswerLength = localStorage.getItem("ans_length");
     
 
     document.getElementById("api_key").value = cachedApiKey || "";
@@ -16,7 +16,7 @@ document.getElementById("answer-button").addEventListener("click", function() {
     var userInput = document.getElementById("user_input").value.trim();
     var answerLength = document.getElementById("ans_length").value.trim();
 
-    if (apiKey === "" || userInput === "" || taskType === "") {
+    if (apiKey === "" || userInput === "" || answerLength === "") {
         alert("Please fill in all required fields.");
         return;
     }
