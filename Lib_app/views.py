@@ -190,4 +190,19 @@ def text_embedd_view(request):
     return render(request, 'Text_Embedd.html', {'form': form, 'answer': answer})
 
 
-    
+def text_generate_view(request):
+    answer = None
+
+    if request.method == 'POST':
+        form = TextEmbeddForm(request.POST)
+        if form.is_valid():
+            api_key = form.cleaned_data['api_key']
+            user_input = form.cleaned_data['user_input']
+            task_type = form.cleaned_data['task_type']
+            answer = TextEmbedd(api_key, user_input, task_type) 
+
+            return JsonResponse({'answer': answer})
+    else:
+        form = TextEmbeddForm()
+
+    return render(request, 'Text_Embedd.html', {'form': form, 'answer': answer})    
