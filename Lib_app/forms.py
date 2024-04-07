@@ -51,6 +51,8 @@ class TextEmbeddForm(forms.Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
     task_type = forms.CharField(label='Task Type')
+
+
     
  
     
