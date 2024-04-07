@@ -58,4 +58,4 @@ def TextEmbedd(api_key, user_input, task_type):
 
 def TextGenerate(api_key, user_input, ans_length):
     client = BasicLingua(api_key=api_key)
-    answer
+    answer = client
