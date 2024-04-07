@@ -188,4 +188,6 @@ def text_embedd_view(request):
         form = TextEmbeddForm()
 
     return render(request, 'Text_Embedd.html', {'form': form, 'answer': answer})
+
+
     
