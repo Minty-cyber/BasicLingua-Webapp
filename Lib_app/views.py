@@ -199,7 +199,7 @@ def text_generate_view(request):
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
             ans_length = form.cleaned_data['ans_length']
-            answer = TextEmbedd(api_key, user_input, task_type) 
+            answer = TextGenerate(api_key, user_input, task_type) 
 
             return JsonResponse({'answer': answer})
     else:
