@@ -205,4 +205,4 @@ def text_generate_view(request):
     else:
         form = TextGenerateForm()
 
-    return render(request, 'Text_Embedd.html', {'form': form, 'answer': answer})    
+    return render(request, 'Text_Generate.html', {'form': form, 'answer': answer})    
