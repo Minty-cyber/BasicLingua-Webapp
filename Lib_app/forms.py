@@ -53,7 +53,7 @@ class TextEmbeddForm(forms.Form):
     task_type = forms.CharField(label='Task Type')
 
 class TextGenerate(forms.Form):
-    a
+    
     
  
     
