@@ -52,7 +52,7 @@ class TextEmbeddForm(forms.Form):
     user_input = forms.CharField(label='User Input')
     task_type = forms.CharField(label='Task Type')
 
-class TextGenerate(forms.Form):
+class TextGenerateForm(forms.Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
     ans_length = forms.CharField(label='Answer Length')
