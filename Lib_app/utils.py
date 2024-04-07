@@ -56,4 +56,4 @@ def TextEmbedd(api_key, user_input, task_type):
     answer = client.text_embedd(user_input, task_type)
     return answer
 
-def TextGenerate(api_)
+def TextGenerate(api_key, )
