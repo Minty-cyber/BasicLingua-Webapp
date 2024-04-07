@@ -46,7 +46,7 @@ document.getElementById("answer-button").addEventListener("click", function() {
 
 document.getElementById("refresh-button").addEventListener("click", function() {
     document.getElementById("user_input").value = "";
-    document.getElementById("task_type").value = "";
+    document.getElementById("ans_length").value = "";
     document.getElementById("answer-result").innerHTML = "";
 
     
