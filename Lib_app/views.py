@@ -203,6 +203,6 @@ def text_generate_view(request):
 
             return JsonResponse({'answer': answer})
     else:
-        form = TextEmbeddForm()
+        form = TextGenerateForm()
 
     return render(request, 'Text_Embedd.html', {'form': form, 'answer': answer})    
