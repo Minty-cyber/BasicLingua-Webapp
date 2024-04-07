@@ -54,7 +54,7 @@ class TextEmbeddForm(forms.Form):
 
 class TextGenerate(forms.Form):
     api_key = forms.CharField(label='API Key')
-    user_input = forms.CharField(label=)
+    user_input = forms.CharField(label='User Input')
     
  
     
