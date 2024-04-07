@@ -57,5 +57,6 @@ class TextGenerate(forms.Form):
     user_input = forms.CharField(label='User Input')
     ans_length = forms.CharField(label='Answer Length')
     
+    
  
     
