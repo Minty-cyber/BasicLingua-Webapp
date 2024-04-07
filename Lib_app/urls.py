@@ -13,7 +13,7 @@ urlpatterns = [
     path('text-lemstem/', text_lemstem_view, name='text-lemstem'),
     path('text-tokenize/', text_tokenize_view, name='text-tokenize'),
     path('text-embedd/', text_embedd_view, name='text-embedd'),
-    path('text-embedd/', text_embedd_view, name='text-embedd'),
+    path('text-generate/', text_embedd_view, name='text-embedd'),
     
     
     
