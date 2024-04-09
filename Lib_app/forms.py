@@ -58,7 +58,7 @@ class TextGenerateForm(forms.Form):
     ans_length = forms.CharField(label='Answer Length')
 
 class DetectSpamForm(forms.Form):
-    api_key
+    api_key = forms
     
  
     
