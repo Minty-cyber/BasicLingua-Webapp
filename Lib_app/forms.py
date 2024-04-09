@@ -59,7 +59,7 @@ class TextGenerateForm(forms.Form):
 
 class DetectSpamForm(forms.Form):
     api_key = forms.CharField(label='API Key')
-    user_input = forms
+    user_input = forms.CharField
     
  
     
