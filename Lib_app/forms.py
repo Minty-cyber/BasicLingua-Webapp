@@ -63,7 +63,7 @@ class TextGenerateForm(forms.Form):
 #     num_classes = 
 
 class TextClean(forms.Form):
-    
+    api_key
     
  
     
