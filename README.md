@@ -5,7 +5,7 @@ BasicLingua-WebApp is a web platform that showcases the features of BasicLingua,
 
 # How BasicLingua Web App works :wrench:
 
-The homepage of the application features an entry field where users can input the API key required for initializing the BasicLingua library. This key is essential for accessing and utilizing the library's features. Upon accessing the page, users are prompted to obtain an API key from [here](https://aistudio.google.com/app/apikey) for the initialization of the BasicLingua library.
+The homepage of the application features an entry field where users can input the API key required for initializing the BasicLingua library . This key is essential for accessing and utilizing the library's features. Upon accessing the page, users are prompted to obtain an API key from [here](https://aistudio.google.com/app/apikey) for the initialization of the BasicLingua library.
 
 # Features of the Web App :dart:
 <p align="center">
