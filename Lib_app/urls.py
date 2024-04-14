@@ -14,7 +14,7 @@ urlpatterns = [
     path('text-tokenize/', text_tokenize_view, name='text-tokenize'),
     path('text-embedd/', text_embedd_view, name='text-embedd'),
     path('text-generate/', text_generate_view, name='text-generate'),
-    path('text-clean/', text_generate_view, name='text-generate'),
+    path('text-clean/', text_clean_view, name='text-generate'),
 
     
     
