@@ -212,4 +212,4 @@ def text_clean_view(request):
     
     if request.method == 'POST':
         form = TextCleanForm(request.POST)
-        api_key = form.cleaned_data['api']
+        api_key = form.cleaned_data['api_key']
