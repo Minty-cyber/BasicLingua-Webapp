@@ -69,6 +69,7 @@ class TextCleanForm(forms.Form):
 
 class TextNormalizeForm(forms.Form):
     api_key = forms.CharField(label='API Key')
+    
 
     
  
