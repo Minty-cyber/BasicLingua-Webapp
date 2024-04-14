@@ -14,7 +14,7 @@ window.onload = function() {
 document.getElementById("answer-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();
     var userInput = document.getElementById("user_input").value.trim();
-    var  = document.getElementById("clean_info").value.trim();
+    var cleanInfo = document.getElementById("clean_info").value.trim();
 
     if (apiKey === "" || userInput === "" || answerLength === "") {
         alert("Please fill in all required fields.");
