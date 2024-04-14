@@ -206,3 +206,5 @@ def text_generate_view(request):
         form = TextGenerateForm()
 
     return render(request, 'Text_Generate.html', {'form': form, 'answer': answer})    
+
+def te
