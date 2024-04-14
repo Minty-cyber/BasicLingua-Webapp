@@ -217,4 +217,4 @@ def text_clean_view(request):
         clean_info = form.cleaned_data['clean_info']
         answer = TextClean(api_key, user_input, clean_info)
         
-        return Json
+        return JsonResponse
