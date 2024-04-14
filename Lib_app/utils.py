@@ -61,4 +61,4 @@ def TextGenerate(api_key, user_input, ans_length):
     answer = client.text_generate(user_input, ans_length)
     return answer
 
-def TextClean
+def TextClean(api_key)
