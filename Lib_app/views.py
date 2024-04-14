@@ -222,4 +222,4 @@ def text_clean_view(request):
     else:
         form = TextCleanForm()
         
-    return render(request)
+    return render(request, 'Te')
