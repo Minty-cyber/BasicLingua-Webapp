@@ -222,4 +222,4 @@ def text_clean_view(request):
     else:
         form = TextCleanForm()
         
-    return render(request, 'Text_Clean.html', {'form': form})
+    return render(request, 'Text_Clean.html', {'form': form, c})
