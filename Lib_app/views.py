@@ -212,3 +212,4 @@ def text_clean_view(request):
     
     if request.method == 'POST':
         form = TextCleanForm(request.POST)
+        
