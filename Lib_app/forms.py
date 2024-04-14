@@ -62,8 +62,8 @@ class TextGenerateForm(forms.Form):
 #     user_input = forms.CharField(label='User Input')
 #     num_classes = 
 
-# class TextClean(forms.Form):
-#     api_key
+class TextClean(forms.Form):
+    api_key
     
  
     
