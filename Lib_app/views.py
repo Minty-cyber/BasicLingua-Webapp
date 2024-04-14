@@ -220,4 +220,5 @@ def text_clean_view(request):
             
             return JsonResponse({'answer': answer })
     else:
-        form = TextCleanForm
+        form = TextCleanForm()
+        
