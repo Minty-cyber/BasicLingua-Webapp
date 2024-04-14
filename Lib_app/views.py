@@ -215,4 +215,4 @@ def text_clean_view(request):
         api_key = form.cleaned_data['api_key']
         user_input = form.cleaned_data['user_input']
         clean_info = form.cleaned_data['clean_info']
-        answer = TextClean(api_key)
+        answer = TextClean(api_key, user)
