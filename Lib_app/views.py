@@ -219,3 +219,4 @@ def text_clean_view(request):
             answer = TextClean(api_key, user_input, clean_info)
             
             return JsonResponse({'answer': answer })
+        
