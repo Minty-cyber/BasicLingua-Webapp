@@ -64,4 +64,4 @@ def TextGenerate(api_key, user_input, ans_length):
 def TextClean(api_key, user_input, clean_info):
     client = BasicLingua(api_key=api_key)
     answer = client.text_clean(user_input, clean_info)
-    return answ
+    return answer
