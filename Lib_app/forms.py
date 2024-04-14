@@ -66,7 +66,7 @@ class TextCleanForm(forms.Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
     clean_info = forms.CharField(label='Clean Info')
-    
+    class 
 
     
  
