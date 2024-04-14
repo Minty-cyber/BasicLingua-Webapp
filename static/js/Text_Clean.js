@@ -51,7 +51,7 @@ document.getElementById("refresh-button").addEventListener("click", function() {
 
     
     localStorage.removeItem("user_input");
-    localStorage.removeItem("ans_length");
+    localStorage.removeItem("clean_info");
 });
 
 
