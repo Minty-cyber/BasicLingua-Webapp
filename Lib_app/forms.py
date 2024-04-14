@@ -67,7 +67,7 @@ class TextCleanForm(forms.Form):
     user_input = forms.CharField(label='User Input')
     clean_info = forms.CharField(label='Clean Info')
 
-class  TextNormalizeForm(forms.Form)
+class TextNormalizeForm(forms.Form)
 
     
  
