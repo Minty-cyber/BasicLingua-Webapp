@@ -208,4 +208,4 @@ def text_generate_view(request):
     return render(request, 'Text_Generate.html', {'form': form, 'answer': answer})    
 
 def text_clean_view(request):
-    answer 
+    answer - None
