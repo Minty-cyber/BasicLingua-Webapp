@@ -210,4 +210,4 @@ def text_generate_view(request):
 def text_clean_view(request):
     answer = None
     
-    if request.method == ''
+    if request.method == 'POST'
