@@ -66,4 +66,4 @@ def TextClean(api_key, user_input, clean_info):
     answer = client.text_clean(user_input, clean_info)
     return answer
 
-def TextNormalize(api_key)
+def TextNormalize(api_key, user_input)
