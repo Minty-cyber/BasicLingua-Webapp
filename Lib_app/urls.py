@@ -15,7 +15,7 @@ urlpatterns = [
     path('text-embedd/', text_embedd_view, name='text-embedd'),
     path('text-generate/', text_generate_view, name='text-generate'),
     path('text-clean/', text_clean_view, name='text-clean'),
-    path('text-clean/', text_clean_view, name='text-clean'),
+    path('text-normalize/', text_clean_view, name='text-clean'),
     
 
     
