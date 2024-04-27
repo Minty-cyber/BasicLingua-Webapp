@@ -68,4 +68,4 @@ def TextClean(api_key, user_input, clean_info):
 
 def TextNormalize(api_key, user_input, clean_info):
     client = BasicLingua(api_key=api_key)
-    transformed_answer
+    transformed_answer = 
