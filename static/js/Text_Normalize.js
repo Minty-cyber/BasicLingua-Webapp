@@ -16,7 +16,7 @@ document.getElementById("summarize-button").addEventListener("click", function()
     var userInput = document.getElementById("user_input").value.trim();
     var patterns = document.getElementById("mode").value.trim();
 
-    if (apiKey === "" || userInput === "" || summary_length === "") {
+    if (apiKey === "" || userInput === "" || mode === "") {
         alert("Please fill in all required fields.");
         return;
     }
