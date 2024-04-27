@@ -223,3 +223,5 @@ def text_clean_view(request):
         form = TextCleanForm()
         
     return render(request, 'Text_Clean.html', {'form': form, 'answer': answer})
+
+
