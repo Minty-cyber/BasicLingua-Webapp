@@ -25,7 +25,7 @@ document.getElementById("summarize-button").addEventListener("click", function()
 
     localStorage.setItem("api_key", apiKey);
     localStorage.setItem("user_input", userInput);
-    localStorage.setItem("mode", patterns);
+    localStorage.setItem("mode", mode);
 
     $.ajax({
         url: translationUrl,
