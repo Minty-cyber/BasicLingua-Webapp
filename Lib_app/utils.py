@@ -67,4 +67,4 @@ def TextClean(api_key, user_input, clean_info):
     return answer
 
 def TextNormalize(api_key, user_input, clean_info):
-    client = Basic
+    client = BasicLingua
