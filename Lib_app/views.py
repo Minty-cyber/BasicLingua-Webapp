@@ -239,5 +239,5 @@ def text_normalize_view(request):
     else:
         form = TextNormalizeForm()
         
-    return render(request, 'Text_Normalize.html', {'form': form, 'answer': answer})
+    return render(request, 'Text_Normalize.html', {'form': form, 'transformed_answer': transformed_answer})
 
