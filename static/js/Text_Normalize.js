@@ -14,7 +14,7 @@ window.onload = function() {
 document.getElementById("summarize-button").addEventListener("click", function() {
     var apiKey = document.getElementById("api_key").value.trim();
     var userInput = document.getElementById("user_input").value.trim();
-    var patterns = document.getElementById("mode").value.trim();
+    var mode = document.getElementById("mode").value.trim();
 
     if (apiKey === "" || userInput === "" || mode === "") {
         alert("Please fill in all required fields.");
