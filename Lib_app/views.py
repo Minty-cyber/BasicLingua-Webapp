@@ -235,7 +235,7 @@ def text_normalize_view(request):
             mode = form.cleaned_data['mode']
             transformed_answer = TextNormalize(api_key, user_input, mode)
             
-            return JsonResponse({'answer': answer })
+            return JsonResponse({'transformed_answer': transformed_answer })
     else:
         form = TextCleanForm()
         
