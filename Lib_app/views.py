@@ -237,7 +237,7 @@ def text_normalize_view(request):
             
             return JsonResponse({'transformed_answer': transformed_answer })
     else:
-        form = TextCleanForm()
+        form = TextNormalizeForm()
         
     return render(request, 'Text_Clean.html', {'form': form, 'answer': answer})
 
