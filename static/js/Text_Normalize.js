@@ -46,7 +46,7 @@ document.getElementById("summarize-button").addEventListener("click", function()
 
 document.getElementById("refresh-button").addEventListener("click", function() {
     document.getElementById("user_input").value = "";
-    document.getElementById("summary_length").value = "";
+    document.getElementById("mode").value = "";
     document.getElementById("summary-result").innerHTML = "";
 
     
