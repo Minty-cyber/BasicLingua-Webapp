@@ -241,3 +241,5 @@ def text_normalize_view(request):
         
     return render(request, 'Text_Normalize.html', {'form': form, 'transformed_answer': transformed_answer})
 
+
+
