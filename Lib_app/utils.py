@@ -73,5 +73,5 @@ def TextNormalize(api_key, user_input, mode):
 
 def TextSRL(api_key, user_input):
     client = BasicLingua(api_key=api_key)
-    transformed_answer = client.text_normalize(user_input, mode)
+    srl_result = client.text_normalize(user_input, mode)
     return transformed_answer
