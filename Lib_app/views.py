@@ -242,7 +242,7 @@ def text_normalize_view(request):
     return render(request, 'Text_Normalize.html', {'form': form, 'transformed_answer': transformed_answer})
 
 def text_tokenize_view(request):
-    answer = None
+    srl_result = None
 
     if request.method == 'POST':
         form = TextTokenizeForm(request.POST)
