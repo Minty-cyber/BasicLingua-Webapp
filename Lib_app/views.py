@@ -251,7 +251,7 @@ def text_tokenize_view(request):
             user_input = form.cleaned_data['user_input']
             answer = TextSRL(api_key, user_input) 
 
-            return JsonResponse({'srl_result': answer})
+            return JsonResponse({'srl_result': srl_result})
     else:
         form = TextTokenizeForm()
 
