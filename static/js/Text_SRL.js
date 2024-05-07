@@ -30,7 +30,7 @@ document.getElementById("answer-button").addEventListener("click", function() {
         success: function(response) {
             document.getElementById("loader").style.display = "none";
             console.log("Response:", response);
-            document.getElementById("answer-result").innerHTML = "<h4>Answer</h4><p style='text-align: left; max-width: 100%; overflow-wrap: break-word;'>" + response.answer + "</p>";
+            document.getElementById("answer-result").innerHTML = "<h4>Answer</h4><p style='text-align: left; max-width: 100%; overflow-wrap: break-word;'>" + response.srl_result + "</p>";
         },
         error: function(xhr, errmsg, err) {
             document.getElementById("loader").style.display = "none";
