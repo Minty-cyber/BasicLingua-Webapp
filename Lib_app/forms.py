@@ -72,6 +72,8 @@ class TextNormalizeForm(forms.Form):
     user_input = forms.CharField(label='User Input')
     mode = forms.CharField(label= 'Mode')
 
+
+
     
  
     
