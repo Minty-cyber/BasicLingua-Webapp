@@ -70,3 +70,8 @@ def TextNormalize(api_key, user_input, mode):
     client = BasicLingua(api_key=api_key)
     transformed_answer = client.text_normalize(user_input, mode)
     return transformed_answer
+
+def TextNormalize(api_key, user_input, mode):
+    client = BasicLingua(api_key=api_key)
+    transformed_answer = client.text_normalize(user_input, mode)
+    return transformed_answer
