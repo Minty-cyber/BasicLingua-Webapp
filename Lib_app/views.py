@@ -253,7 +253,7 @@ def text_tokenize_view(request):
 
             return JsonResponse({'srl_result': srl_result})
     else:
-        form = TextTokenizeForm()
+        form = TextSRLForm()
 
     return render(request, 'Text_Tokenize.html', {'form': form, 'answer': answer})
 
