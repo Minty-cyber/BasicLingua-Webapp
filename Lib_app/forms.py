@@ -76,7 +76,6 @@ class TextNormalizeForm(forms.Form):
 class TextSRLForm(forms.Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
-    mode = forms.CharField(label= 'Mode')
-    
+   
  
     
