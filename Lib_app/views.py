@@ -241,5 +241,19 @@ def text_normalize_view(request):
         
     return render(request, 'Text_Normalize.html', {'form': form, 'transformed_answer': transformed_answer})
 
+def text_tokenize_view(request):
+    answer = None
 
+    if request.method == 'POST':
+        form = TextTokenizeForm(request.POST)
+        if form.is_valid():
+            api_key = form.cleaned_data['api_key']
+            user_input = form.cleaned_data['user_input']
+            answer = TextTokenize(api_key, user_input) 
+
+            return JsonResponse({'answer': answer})
+    else:
+        form = TextTokenizeForm()
+
+    return render(request, 'Text_Tokenize.html', {'form': form, 'answer': answer})
 
