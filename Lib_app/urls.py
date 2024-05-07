@@ -16,6 +16,8 @@ urlpatterns = [
     path('text-generate/', text_generate_view, name='text-generate'),
     path('text-clean/', text_clean_view, name='text-clean'),
     path('text-normalize/', text_normalize_view, name='text-normalize'),
+    path('text-normalize/', text_normalize_view, name='text-normalize'),
+
     
 
     
