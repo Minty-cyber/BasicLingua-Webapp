@@ -17,6 +17,7 @@ urlpatterns = [
     path('text-clean/', text_clean_view, name='text-clean'),
     path('text-normalize/', text_normalize_view, name='text-normalize'),
     path('text-srl/', text_srl_view, name='text-srl'),
+    
 
     
 
