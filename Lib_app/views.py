@@ -255,5 +255,5 @@ def text_tokenize_view(request):
     else:
         form = TextSRLForm()
 
-    return render(request, 'Text_SRL.html', {'form': form, 'answer': answer})
+    return render(request, 'Text_SRL.html', {'form': form, 'srl_result': srl_result})
 
