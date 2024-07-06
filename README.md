@@ -40,6 +40,11 @@ The features on the sidebar will be updated constantly prior to the ones [here](
    python manage.py runserver
    ```
 
+# Live Demo 🚀
+
+Check out the live demo of BasicLingua WebApp to see how our LLM-based-NLP Python library works in action. [BasicLingua Webapp](https://basiclingua-webapp.onrender.com/)
+
+
 # Contributing 🤝
 
 We are excited to receive contributions! Please refer to our [CONTRIBUTING.md](https://github.com/Minty-cyber/BasicLingua-Webapp/edit/main/CONTRIBUTING.md) for comprehensive steps on submitting pull requests to the project.
