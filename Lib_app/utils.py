@@ -1,4 +1,4 @@
-from basiclingua import BasicLingua
+from basiclingua import GeminiLingua
 
 
 def Translate(api_key, user_input, target_lang):
