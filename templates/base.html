@@ -65,7 +65,7 @@
                         <div class="form-group">
                             <input type="text" class="form-control" id="api_key_input" placeholder="Enter Your API Key" value="{{ api_key }}">
                         </div>
-                        <button type="submit" class="btn btn-primary">Save API Key</button>
+                        <button type="submit" class="mr-3 btn btn-primary">Save API Key</button>
                         <button id="clear-cache-button" class="btn btn-secondary">Clear API key from cache</button>
                     </form>
                     <div id="message" style="display: none;"></div> 
@@ -80,9 +80,8 @@
         const hamburger = document.getElementById('hamburger');
         const closeBtn = document.getElementById('close-btn');
 
-        hamburger.addEventListener('mouseenter', openNav);
+        hamburger.addEventListener('click', openNav); // Changed from 'mouseenter' to 'click'
         closeBtn.addEventListener('click', closeNav);
-        sidebar.addEventListener('mouseleave', closeNav);
 
         function openNav() {
             sidebar.style.width = '230px';
