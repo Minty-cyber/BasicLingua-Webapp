@@ -30,7 +30,7 @@
         <span class="close-btn" id="close-btn">&times;</span>
         <a href="{% url 'extract-patterns' %}">Extract&nbsp;Patterns</a>
         <a href="{% url 'text-translation' %}">Text&nbsp;Translation</a>
-        <a href="{% url 'detect-ner' %}">Detect&nbsp;NER</a>
+        <!-- <a href="{% url 'detect-ner' %}">Detect&nbsp;NER</a> -->
         <a href="{% url 'text-replace' %}">Text&nbsp;Replace</a>
         <a href="{% url 'text-correction' %}">Text&nbsp;Correction</a>
         <a href="{% url 'text-summarize' %}">Text&nbsp;Summarize</a>
@@ -168,10 +168,3 @@
 </html>
 
 
-
-<!-- from basiclingua import GeminiLingua
-
-gemini_model = GeminiLingua(api_key="YOUR_GEMINI_API_KEY", model_name="gemini-1.0-pro-latest")
-summary = gemini_model.text_summarize(input_text, summary_length)
-
-print(summary) -->
