@@ -13,10 +13,9 @@ def Text_Replace(api_key, user_input, replacement_rules):
 
 
 def Text_Correction(api_key, user_input):
-    # Initialize the Gemini model
-    gemini_model = GeminiLingua(api_key=api_key, model_name='gemini-1.0-pro-latest', vision_model_name='models/gemini-1.5-pro-latest')
     
-    # Perform text spellcheck
+    gemini_model = GeminiLingua(api_key=api_key, model_name='gemini-1.0-pro-latest', 
+                                vision_model_name='models/gemini-1.5-pro-latest')
     corrected_text = gemini_model.text_spellcheck(user_input)
     
     return corrected_text
