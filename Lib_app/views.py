@@ -47,8 +47,8 @@ def text_correction_view(request):
         if form.is_valid():
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
-            corrected_text = Text_Correction(api_key, user_input)\
-            
+            corrected_text = Text_Correction(api_key, user_input)
+        
             return JsonResponse({'corrected_text': corrected_text})
             
     else:
