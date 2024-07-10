@@ -47,7 +47,7 @@ def text_correction_view(request):
         if form.is_valid():
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
-             model_name = request.POST.get('model_name', 'gemini-1.0-pro-latest')
+            model_name = 'gemini-1.0-pro-latest'  
             corrected_text = Text_Correction(api_key, user_input) 
 
             return JsonResponse({'corrected_text': corrected_text})
