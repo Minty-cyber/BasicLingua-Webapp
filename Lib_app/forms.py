@@ -12,7 +12,7 @@ class TextReplacementForm(forms.Form):
 
 class TextCorrectionForm(forms.Form):
     api_key = forms.CharField(label='API Key')
-    user_input = forms.CharField(label='User Input')
+    user_input = forms.CharField(widget=forms.Textarea, label='Text to Correct')
    
     
 class ExtractPatternForm(forms.Form):
