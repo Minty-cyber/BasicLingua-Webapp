@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .utils import *
 from .forms import *
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 
     
 def translate_view(request):
@@ -47,14 +47,14 @@ def text_correction_view(request):
         if form.is_valid():
             api_key = form.cleaned_data['api_key']
             user_input = form.cleaned_data['user_input']
-            model_name = 'gemini-1.0-pro-latest'  
-            corrected_text = Text_Correction(api_key, user_input) 
-
+            corrected_text = Text_Correction(api_key, user_input)\
+            
             return JsonResponse({'corrected_text': corrected_text})
+            
     else:
         form = TextCorrectionForm()
 
-    return render(request, 'Text_Correction.html', {'form': form, 'corrected_text': corrected_text})
+    return render(request, 'text_correction.html', {'form': form, 'corrected_text': corrected_text})
 
 def extract_pattern_view(request):
     extracted_patterns = None
