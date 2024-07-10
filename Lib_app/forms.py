@@ -13,6 +13,7 @@ class TextReplacementForm(forms.Form):
 class TextCorrectionForm(forms.Form):
     api_key = forms.CharField(label='API Key')
     user_input = forms.CharField(label='User Input')
+   
     
 class ExtractPatternForm(forms.Form):
     api_key = forms.CharField(label='API Key')
