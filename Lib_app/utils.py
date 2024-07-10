@@ -27,7 +27,7 @@ def DetectNER(api_key, user_input, ner_tags):
     return answer
 
 def TextSummarize(api_key, user_input, summary_length):
-    client = GeminiLingua(api_key=api_key)
+    client = GeminiLingua(api_key=api_key, model_name="gemini-1.0-pro-latest")
     summary = client.text_summarize(user_input, summary_length)
     return summary
 
@@ -75,3 +75,14 @@ def TextSRL(api_key, user_input):
     client = GeminiLingua(api_key=api_key)
     srl_result = client.text_srl(user_input)
     return srl_result
+
+
+
+
+
+# from basiclingua import GeminiLingua
+
+# gemini_model = GeminiLingua(api_key="YOUR_GEMINI_API_KEY", model_name="gemini-1.0-pro-latest")
+# summary = gemini_model.text_summarize(input_text, summary_length)
+
+# print(summary) 
