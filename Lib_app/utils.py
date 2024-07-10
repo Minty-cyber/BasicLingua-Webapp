@@ -12,8 +12,8 @@ def Text_Replace(api_key, user_input, replacement_rules):
     return answer
 
 def Text_Correction(api_key, user_input, model_name):
-    client = GeminiLingua(api_key=api_key, model_name="gemini-1.0-pro-latest")
-    corrected_text = client.text_spellcheck(user_input)
+    client = GeminiLingua(api_key=api_key)
+    corrected_text = client.text_spellcheck(user_input, model_name=model_name)
     return corrected_text
 
 def ExtractPattern(api_key, user_input, patterns):
