@@ -13,7 +13,6 @@ def Text_Replace(api_key, user_input, replacement_rules):
 
 
 def Text_Correction(api_key, user_input):
-    
     gemini_model = GeminiLingua(api_key=api_key, model_name='gemini-1.0-pro-latest', 
                                 vision_model_name='models/gemini-1.5-pro-latest')
     corrected_text = gemini_model.text_spellcheck(user_input)
@@ -61,8 +60,9 @@ def TextEmbedd(api_key, user_input, task_type):
     return answer
 
 def TextGenerate(api_key, user_input, ans_length):
-    client = GeminiLingua(api_key=api_key)
-    answer = client.text_generate(user_input, ans_length)
+    gemini_model = GeminiLingua(api_key=api_key, model_name='gemini-1.0-pro-latest', 
+                                vision_model_name='models/gemini-1.5-pro-latest')
+    answer = gemini_model.text_generate(user_input,ans_length )
     return answer
 
 def TextClean(api_key, user_input, clean_info):
